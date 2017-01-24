@@ -3,6 +3,7 @@
   Dog's Name: <input type="text">
   State:
   <select name="States" id="States">
+    <option value="" disabled selected>Selct a State...</option>
     <option value="Alabama">Alabama</option>
     <option value="Alaska">Alaska</option>
     <option value="Arizona">Arizona</option>
@@ -57,6 +58,7 @@
 
   Dog Breed:
   <select name="DogBreed" id="DogBreed">
+    <option value="" disabled selected>Choose Dog Breed...</option>
     <option value='Abruzzen'>Abruzzen</option>
     <option value='Affenpinscher'>Affenpinscher</option>
     <option value='AfghanHound'>Afghan Hound</option>
@@ -507,4 +509,132 @@
     <option value='YugoslacianTricolorHound'>Yugoslavian Tricolor Hound</option>
   </select>
 
+  Dog's Age: <input type="text">
+  Dog's Weight: <input type="text">
+  Dog's Color: <input type="text">
+
+  Where does your dog go potty?
+  <select name="Potty" id="Potty">
+    <option value="" disabled selected>Please Selecte</option>
+    <option value="Inside">Inside completely enclosed fenced area</option>
+    <option value="Underground">Underground electric dog containment system</option>
+    <option value="Outside">Outside loose in unfenced yard</option>
+    <option value="Permanently">Permanently Tied/tethered ouside</option>
+    <option value="OnTie">On tie line for 1 hour or less at a time</option>
+    <option value="Kennel">In a permanent Outside Kennel</option>
+    <option value="Walked">Leash Walked</option>
+  </select>
+
+  Children in the home:
+  <select name="Children" id="Children">
+    <option value="" disabled selected>Choose one</option>
+    <option value="No">No</option>
+    <option value="Children">Children under 16 living in the Home</option>
+    <option value="Daycare">Daycare or baby sitting service in the Home</option>
+    <option value="Foster">Foster Children in the Home</option>
+  </select>
+
+  Have any permanent residents been convicted of animal or domestic abuse in the last 5 years:
+  <input type="radio">No
+  <input type="radio">Yes
+
+  Do you Breed this Dog:
+  <select name="BreedDog" id="BreedDog">
+    <option value="No">No</option>
+    <option value="Stud">Stud only</option>
+    <option value="1Litter">1 litter annually</option>
+    <option value="2Litter">2 litters annually</option>
+  </select>
+
+  Where does this Dog Sleep:
+  <select name="Sleep" id="Sleep">
+    <option value="Inside">Inside Home</option>
+    <option value="Garage">Garage</option>
+    <option value="OutsideFenced">Outside loose in fenced yard</option>
+    <option value="Outside">Outside without any restraints</option>
+    <option value="Permanent">Permanent outside kennel</option>
+    <option value="Tied">Tied Out</option>
+  </select>
+
+  What type of area do you live in:
+  <input type="radio">Country and/or your dog travels with you
+  <input type="radio">City, Town, Suburb, Campus
+
+  Number of Dogs in the Home:
+  <select name="DogsInHome" id="DogsInHome">
+    <option value="1">1</option>
+    <option value="2">2 - 4</option>
+    <option value="More">5 or More</option>
+  </select>
+
+  Veterinarian Visits:
+  <select name="VetVisits" id="VetVisits">
+    <option value="Annually">Annually</option>
+    <option value="AnnuallyWithInj">Annually and would treat for illness or injury</option>
+    <option value="Never">Never</option>
+  </select>
+
+  Compliance with Local Laws:
+  <input type="radio">Yes
+  <input type="radio">No
+
+  Gender:
+  <input type="radio">Male
+  <input type="radio">Female
+
+  Reproductive Status:
+  <select name="Reproductive" id="Reproductive">
+    <option value="Intact">Intact</option>
+    <option value="Nutered">Neutered Male</option>
+    <option value="Spayed">Spayed Female</option>
+  </select>
+
+  Type of Training:
+  <select name="Training" id="Training">
+    <option value="None">None or Basic</option>
+    <option value="Intermediate">Intermediat</option>
+    <option value="Advanced">Advanced</option>
+    <option value="Therapy">Therapy Dog</option>
+    <option value="Hunting">Hunting, Gun, Sporting off Leash, Farm, Herding</option>
+    <option value="Sled">Sled dog racing, Musing for hire, Freighting</option>
+    <option value="War">War or Police Service dog, Professionally trained Personal Protection or Professionally Trained Guard Dog</option>
+  </select>
+
+  Is this Dog integral or involved in your work:
+  <input type="radio">Yes
+  <input type="radio">No
+
+  Human Injury:
+  <select name="Injury" id="Injury">
+    <option value="None">None</option>
+    <option value="ChildMinor">Injured a Child - leaving minor bruising, scratch but no broken skin - one time</option>
+    <option value="AdultMinor">Injured an Adult - leaving minor bruising, scratch but no broken skin - one time</option>
+    <option value="ChildBreak">Injured a Child - breaking skin, no permanent scarring</option>
+    <option value="AdultBreak">Injured an Adult - breaking skin, no permanent scarring</option>
+    <option value="ChildMedical">Injured a Child - requiring medical attention and/or stitches</option>
+    <option value="AdultMedical">Injured an Adult - requiring medical attention and/or stitches</option>
+    <option value="ChildMore">Injured a Child more than once</option>
+    <option value="AdultMore">Injured an Adult more than once</option>
+  </select>
+
+  Injured/Killed Another Animal:
+  <select name="KilledAnimal" id="KilledAnimal">
+    <option value="None">None</option>
+    <option value="Injured">Injured another Animal</option>
+    <option value="Killed">Killed another Animal</option>
+    <option value="InjuredPlus">Injured more than one Animal</option>
+    <option value="KilledPlus">Killed more than one Animal</option>
+  </select>
+
+  Animal Control:
+  <select name="AnimalControl" id="AnimalControl">
+    <option value="None">None</option>
+    <option value="Visited">Visited by animal control 1 time for minor infraction</option>
+    <option value="Fined">Animal Control has fined or labeled this dog</option>
+    <option value="Taken">Animal control has visited or taken this dog 1 time</option>
+  </select>
+
+  Is this dog a foster dog:
+  <input type="radio">Yes
+  <input type="radio">No
 </form>
