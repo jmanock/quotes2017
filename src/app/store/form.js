@@ -8,17 +8,15 @@ angular
     $scope.next = function(DogName){
       /*
         - Maybe a back button or side options
+        - How about a counter on clicks?
         PROBLEM
           - Watch the if else changing makes the if else change
       */
       // console.log(DogName); WORKS
-      if($scope.age === true){
-        $scope.age = false;
-        $scope.weight = true;
-      }else{
-        $scope.age = true;
-        $scope.name = false;
-      }
+
+      var clicks = 0;
+      clicks = clicks+1;
+      console.log(clicks);
 
 
 
