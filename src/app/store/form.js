@@ -9,7 +9,7 @@ angular
       /*
         - Maybe a back button or side options
         PROBLEM
-          - Doesnt matter what it says its on/off
+          - Watch the if else changing makes the if else change
       */
       // console.log(DogName); WORKS
       if($scope.age === true){
