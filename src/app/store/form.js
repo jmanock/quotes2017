@@ -7,13 +7,21 @@ angular
   function FormCtrl($scope){
     $scope.next = function(DogName){
       /*
-        - Needs to show the next question on click
-        - Add the dog name to the other questions
-        - This should be the button all the way down
+        - Maybe a back button or side options
+        PROBLEM
+          - Doesnt matter what it says its on/off
       */
       // console.log(DogName); WORKS
-      $scope.age = true;
-      $scope.name = false;
+      if($scope.age === true){
+        $scope.age = false;
+        $scope.weight = true;
+      }else{
+        $scope.age = true;
+        $scope.name = false;
+      }
+
+
+
     }
 
   }
