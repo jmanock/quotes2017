@@ -1,2 +1,3 @@
-What is the name of your Dog? <input type="text">
-<button ng-click='next()' type='button'>Next</button>
+What is the name of your Dog? <input type="text" required ng-model='DogName'>
+<button ng-click='next(DogName)' type='button'>Next</button>
+<h3>{{DogName}}</h3>
