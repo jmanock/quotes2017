@@ -1,3 +1,5 @@
-What is the name of your Dog? <input type="text" required ng-model='DogName'>
-<button ng-click='next(DogName)' type='button'>Next</button>
-<h3>{{DogName}}</h3>
+<form action="" name='DogForm'>
+  What is the name of your Dog? <input type="text" ng-model='DogName' required>
+  <button type='button' ng-click='next(DogName)' ng-disabled='DogForm.$invalid'>Next</button>
+  <h3>{{DogName}}</h3>
+</form>
