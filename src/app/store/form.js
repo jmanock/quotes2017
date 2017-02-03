@@ -12,6 +12,8 @@ angular
         - This should be the button all the way down
       */
       // console.log(DogName); WORKS
+      $scope.age = true;
+      $scope.name = false;
     }
 
   }
