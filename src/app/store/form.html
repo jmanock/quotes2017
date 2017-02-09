@@ -1,20 +1,20 @@
 <form action="" name='DogForm'>
-  <div class="name" ng-show='name'>
+  <div class="name" ng-hide='name'>
     <span>What is the name of your Dog? <input type="text" ng-model='DogName' required></span>
 
-    <button type='button' ng-click='name(DogName)'  ng-disabled='DogForm.$invalid'>Next</button>
+    <button type='button' ng-click='Name(DogName)'  ng-disabled='DogForm.$invalid'>Next</button>
   </div>
 
   <div class="age" ng-show='age'>
     <span>How old is {{DogName}} <input type="number" min='0' max='20' required></span>
-    <button type='button' ng-click='age(DogName)'>Next</button>
+    <button type='button' ng-click='Age(DogName)'>Next</button>
   </div>
   <!-- <fountain-state></fountain-state>
   <fountain-breeds></fountain-breeds> -->
 
   <div class="weight" ng-show='weight'>
     <span>How much does {{DogName}} weight <input type="number" min='0' required></span>
-    <button type='button' ng-click='weight(DogName)'>Next</button>
+    <button type='button' ng-click='Weight(DogName)'>Next</button>
   </div>
 
 
