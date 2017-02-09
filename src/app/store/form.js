@@ -5,7 +5,10 @@ angular
     controller: FormCtrl
   });
   function FormCtrl($scope){
-
+    /*
+      - More than one Question at a time
+      - Store the answers somewhere
+    */
     $scope.Name = function(DogName){
       console.log(DogName);
       $scope.age = true;
