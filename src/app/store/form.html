@@ -17,6 +17,15 @@
     <button type='button' ng-click='Weight(DogName)'>Next</button>
   </div>
 
+  <div class="state" ng-show='state'>
+    <fountain-state></fountain-state>
+    <button type='button' ng-click='State(DogName)'>Next</button>
+  </div>
+
+  <div class="breed" ng-show='breed'>
+    <fountain-breeds></fountain-breeds>
+    <button type='button' ng-click='Breeds(DogName)'>Next</button>
+  </div>
 
 
 </form>
