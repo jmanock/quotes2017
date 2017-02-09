@@ -5,21 +5,28 @@ angular
     controller: FormCtrl
   });
   function FormCtrl($scope){
-    $scope.next = function(DogName){
+    $scope.name = true;
+    $scope.weight = true;
+    $scope.age = true;
+    $scope.name = function(DogName){
       /*
         - Maybe a back button or side options
-        - How about a counter on clicks?
+        - Remove button add button
         PROBLEM
           - Watch the if else changing makes the if else change
       */
       // console.log(DogName); WORKS
+      console.log(DogName);
+      $scope.name = false;
+      $scope.weight = true;
 
-      var clicks = 0;
-      clicks = clicks+1;
-      console.log(clicks);
+    }
+    $scope.age = function(DogName){
 
-
-
+      console.log(DogName);
+    }
+    $scope.weight = function(DogName){
+      console.log(DogName);
     }
 
   }
