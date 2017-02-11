@@ -33,7 +33,12 @@ angular
     }
 
     $scope.Breeds = function(DogName){
+      $scope.breed = false;
+      $scope.color = true;
+    }
 
+    $scope.Color = function(DogName){
+      
     }
 
   }

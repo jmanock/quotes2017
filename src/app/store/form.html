@@ -9,8 +9,6 @@
     <span>How old is {{DogName}} <input type="number" min='0' max='20' required></span>
     <button type='button' ng-click='Age(DogName)'>Next</button>
   </div>
-  <!-- <fountain-state></fountain-state>
-  <fountain-breeds></fountain-breeds> -->
 
   <div class="weight" ng-show='weight'>
     <span>How much does {{DogName}} weight <input type="number" min='0' required></span>
@@ -18,14 +16,21 @@
   </div>
 
   <div class="state" ng-show='state'>
-    <fountain-state></fountain-state>
+    <span>What State does {{DogName}} live in? <fountain-state></fountain-state></span>
     <button type='button' ng-click='State(DogName)'>Next</button>
   </div>
 
   <div class="breed" ng-show='breed'>
-    <fountain-breeds></fountain-breeds>
+    <span>What breed is {{DogName}} <fountain-breeds></fountain-breeds></span>
     <button type='button' ng-click='Breeds(DogName)'>Next</button>
   </div>
+
+  <div class="color" ng-show='color'>
+    <span>What color is {{DogName}} <input type="text" required></span>
+    <button type='button' ng-click='Color(DogName)'>Next</button>
+  </div>
+
+
 
 
 </form>
