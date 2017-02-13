@@ -1,37 +1,33 @@
 <form action="" name='DogForm'>
-  <!-- <div class="name" ng-hide='name'>
-    <span>What is the name of your Dog? <input type="text" ng-model='DogName' required></span>
-    <button type='button' ng-click='Name(DogName)'  ng-disabled='DogForm.$invalid'>Next</button>
-  </div>
+  <p ng-hide='name'>What is the NAME of your Dog?
+    <input type="text" ng-model='DogName.name'>
+    <input type="button" ng-click='Name(DogName)' value='Next'>
+  </p>
 
-  <div class="age" ng-show='age'>
-    <span>How old is {{DogName}} <input type="number" min='0' max='20' required></span>
-    <button type='button' ng-click='Age(DogName)'>Next</button>
-  </div>
+  <p ng-show='age'>What AGE is {{DogName.name}}?
+    <input type="number" min='0' max='20' ng-model='DogName.age'>
+    <input type="button" ng-click='Age(DogName)' value='Next'>
+  </p>
 
-  <div class="weight" ng-show='weight'>
-    <span>How much does {{DogName}} weight <input type="number" min='0'  required></span>
-    <button type='button' ng-click='Weight(DogName)'>Next</button>
-  </div>
+  <p ng-show='weight'>How much does {{DogName.name}} WEIGHT?
+    <input type="number" min='0' ng-model='DogName.weight'>
+    <input type="button" ng-click='Weight(DogName)' value='Next'>
+  </p>
 
-  <div class="state" ng-show='state'>
-    <span>What State does {{DogName}} live in? <fountain-state></fountain-state></span>
-    <button type='button' ng-click='State(DogName)'>Next</button>
-  </div>
+  <p ng-show='state'>What STATE does {{DogName.name}} live in?
+    <fountain-state></fountain-state>
+    <input type="button" ng-click='State(DogName)' value='Next'>
+  </p>
 
-  <div class="breed" ng-show='breed'>
-    <span>What breed is {{DogName}} <fountain-breeds></fountain-breeds></span>
-    <button type='button' ng-click='Breeds(DogName)'>Next</button>
-  </div>
+  <p ng-show='breed'>What BREED is {{DogName.name}}
+    <fountain-breeds></fountain-breeds>
+    <input type="button" ng-click='Breeds(DogName)' value='Next'>
+  </p>
 
-  <div class="color" ng-show='color'>
-    <span>What color is {{DogName}} <input type="text" required></span>
-    <button type='button' ng-click='Color(DogName)'>Next</button>
-  </div> -->
+  <p ng-show='color'>What COLOR is {{DogName.name}}?
+    <input type="text" ng-model='DogName.color'>
+    <input type="button" ng-click='Color(DogName)' value='Next'>
+  </p>
 
-  <p ng-hide='name'>What is the NAME of your Dog? <input type="text" ng-model='DogName.name'>
-  <input type="button" ng-click='Name(DogName)' value='Next'></p>
 
-  <p ng-show='age'>How old is {{DogName.name}} <input type="number" min='0' max='20' ng-model='DogName.age'>
-  <input type="button" ng-click='Age(DogName)' value='Next'></p>
 </form>

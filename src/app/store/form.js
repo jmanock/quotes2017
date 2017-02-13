@@ -30,15 +30,17 @@ angular
     $scope.State = function(DogName){
       $scope.state = false;
       $scope.breed = true;
+      console.log(DogName);
     }
 
     $scope.Breeds = function(DogName){
       $scope.breed = false;
       $scope.color = true;
+      console.log(DogName);
     }
 
     $scope.Color = function(DogName){
-
+      console.log(DogName);
     }
 
   }
