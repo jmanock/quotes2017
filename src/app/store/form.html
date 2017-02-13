@@ -1,7 +1,6 @@
 <form action="" name='DogForm'>
-  <div class="name" ng-hide='name'>
+  <!-- <div class="name" ng-hide='name'>
     <span>What is the name of your Dog? <input type="text" ng-model='DogName' required></span>
-
     <button type='button' ng-click='Name(DogName)'  ng-disabled='DogForm.$invalid'>Next</button>
   </div>
 
@@ -11,7 +10,7 @@
   </div>
 
   <div class="weight" ng-show='weight'>
-    <span>How much does {{DogName}} weight <input type="number" min='0' required></span>
+    <span>How much does {{DogName}} weight <input type="number" min='0'  required></span>
     <button type='button' ng-click='Weight(DogName)'>Next</button>
   </div>
 
@@ -28,9 +27,11 @@
   <div class="color" ng-show='color'>
     <span>What color is {{DogName}} <input type="text" required></span>
     <button type='button' ng-click='Color(DogName)'>Next</button>
-  </div>
+  </div> -->
 
+  <p ng-hide='name'>What is the NAME of your Dog? <input type="text" ng-model='DogName.name'>
+  <input type="button" ng-click='Name(DogName)' value='Next'></p>
 
-
-
+  <p ng-show='age'>How old is {{DogName.name}} <input type="number" min='0' max='20' ng-model='DogName.age'>
+  <input type="button" ng-click='Age(DogName)' value='Next'></p>
 </form>

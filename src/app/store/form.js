@@ -38,7 +38,7 @@ angular
     }
 
     $scope.Color = function(DogName){
-      
+
     }
 
   }
