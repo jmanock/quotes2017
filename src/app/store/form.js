@@ -41,6 +41,12 @@ angular
 
     $scope.Color = function(DogName){
       console.log(DogName);
+      $scope.color = false;
+      $scope.gender = true;
+    }
+
+    $scope.Gender = function(DogName){
+      console.log(DogName);
     }
 
   }

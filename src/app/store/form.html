@@ -29,5 +29,9 @@
     <input type="button" ng-click='Color(DogName)' value='Next'>
   </p>
 
-
+  <p ng-show='gender'>What GENDER is {{DogName.name}}?
+    <input type="radio" ng-model='DogName.gender' value='Male'>Male
+    <input type="radio" ng-model='DogName.gender' value='Female'>Female
+    <input type="button" ng-click='Gender(DogName)' value='Next'>
+  </p>
 </form>
