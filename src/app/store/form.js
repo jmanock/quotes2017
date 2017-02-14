@@ -7,8 +7,10 @@ angular
   function FormCtrl($scope){
     /*
       - More than one Question at a time
-      - Store the answers somewhere
     */
+    var statesOption = [
+      {'Name':''}
+    ]
     $scope.Name = function(DogName){
       console.log(DogName);
       $scope.age = true;
@@ -27,17 +29,17 @@ angular
       $scope.state = true;
     }
 
-    $scope.State = function(DogName){
-      $scope.state = false;
-      $scope.breed = true;
-      console.log(DogName);
-    }
-
-    $scope.Breeds = function(DogName){
-      $scope.breed = false;
-      $scope.color = true;
-      console.log(DogName);
-    }
+    // $scope.State = function(DogName){
+    //   $scope.state = false;
+    //   $scope.breed = true;
+    //   console.log(DogName);
+    // }
+    //
+    // $scope.Breeds = function(DogName){
+    //   $scope.breed = false;
+    //   $scope.color = true;
+    //   console.log(DogName);
+    // }
 
     $scope.Color = function(DogName){
       console.log(DogName);
@@ -46,6 +48,16 @@ angular
     }
 
     $scope.Gender = function(DogName){
+      console.log(DogName);
+    }
+
+    $scope.State = function(DogName){
+      console.log(DogName);
+    }
+    $scope.Breed = function(DogName){
+      console.log(DogName);
+    }
+    $scope.Something = function(DogName){
       console.log(DogName);
     }
 

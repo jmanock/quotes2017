@@ -1,5 +1,5 @@
 <form action="" name='DogForm'>
-  <p ng-hide='name'>What is the NAME of your Dog?
+  <!-- <p ng-hide='name'>What is the NAME of your Dog?
     <input type="text" ng-model='DogName.name'>
     <input type="button" ng-click='Name(DogName)' value='Next'>
   </p>
@@ -15,12 +15,12 @@
   </p>
 
   <p ng-show='state'>What STATE does {{DogName.name}} live in?
-    <fountain-state></fountain-state>
+    <fountain-state ng-model='DogName.state'></fountain-state>
     <input type="button" ng-click='State(DogName)' value='Next'>
   </p>
 
   <p ng-show='breed'>What BREED is {{DogName.name}}
-    <fountain-breeds></fountain-breeds>
+    <fountain-breeds ng-model='DogName.breed'></fountain-breeds>
     <input type="button" ng-click='Breeds(DogName)' value='Next'>
   </p>
 
@@ -33,5 +33,22 @@
     <input type="radio" ng-model='DogName.gender' value='Male'>Male
     <input type="radio" ng-model='DogName.gender' value='Female'>Female
     <input type="button" ng-click='Gender(DogName)' value='Next'>
+  </p> -->
+
+  <p>What State does your dog live
+    <fountain-state ng-model='DogName.state'></fountain-state>
+    <input type="button" ng-click='State(DogName)' value='Next'>
+  </p>
+
+  <p>What breed is your dog?
+    <fountain-breeds></fountain-breeds>
+    <input type="button" value='Next' ng-click='Breed(DogName)'>
+  </p>
+  <p>Pick something fun
+    <select name="something" id="something" ng-model='DogName.something'>
+      <option value="x">Sex</option>
+      <option value="m">Master</option>
+      <input type="button" value='submit' ng-click='Something(DogName)'>
+    </select>
   </p>
 </form>
