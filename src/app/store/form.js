@@ -8,8 +8,10 @@ angular
     /*
       - More than one Question at a time
     */
-    var statesOption = [
-      {'Name':''}
+    $scope.so = [
+      {Name:'Florida'},
+      {Name:'Illinois'},
+      {Name:'Georiga'}
     ]
     $scope.Name = function(DogName){
       console.log(DogName);

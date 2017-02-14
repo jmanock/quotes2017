@@ -45,9 +45,8 @@
     <input type="button" value='Next' ng-click='Breed(DogName)'>
   </p>
   <p>Pick something fun
-    <select name="something" id="something" ng-model='DogName.something'>
-      <option value="x">Sex</option>
-      <option value="m">Master</option>
+    <select name="" id="" ng-model='DogName.something'>
+      <option ng-repeat='s in so'>{{s.Name}}</option>
       <input type="button" value='submit' ng-click='Something(DogName)'>
     </select>
   </p>
