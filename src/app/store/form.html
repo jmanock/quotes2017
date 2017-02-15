@@ -34,12 +34,12 @@
     <input type="radio" ng-model='DogName.gender' value='Female'>Female
     <input type="button" ng-click='Gender(DogName)' value='Next'>
   </p> -->
-
+<!--
   <p>What State does your dog live
     <fountain-state ng-model='DogName.state'></fountain-state>
     <input type="button" ng-click='State(DogName)' value='Next'>
-  </p>
-
+  </p> -->
+<p ng-repeat='s in something'>{{s.name}}</p>
   <p>What breed is your dog?
     <fountain-breeds></fountain-breeds>
     <input type="button" value='Next' ng-click='Breed(DogName)'>

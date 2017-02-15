@@ -4,10 +4,12 @@ angular
     templateUrl: 'app/store/form.html',
     controller: FormCtrl
   });
+
   function FormCtrl($scope){
     /*
       - More than one Question at a time
     */
+    console.log('HelloFriend');
     $scope.so = [
       {Name:'Florida'},
       {Name:'Illinois'},
