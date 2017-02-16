@@ -50,9 +50,15 @@
       <input type="button" value='submit' ng-click='Something(DogName)'>
     </select>
   </p>
-
-  <div class="something">
-    <p ng-include='"app/store/states.html"' ng-model='DogName.state'></p>
-    <input type="button" value='Next' ng-click='States(DogName)'>
-  </div>
+  <p ng-include='"app/store/states.html"' ></p>
+  <p>Pick something Else that is fun
+    <select name="" id="" ng-model='DogName.somethingElse'>
+      <option value="" ng-repeat='x in so'>{{x.Name}}</option>
+      <input type="button" value='Next' ng-click='SomethingElse(DogName)'>
+    </select>
+  </p>
+  <input type="button" value='Next' ng-click='States(DogName)'>
+<p ng-include='"app/store/states.html"' ng-model=DogName.states>
+  <input type="button" value='Next' ng-click='States(DogName)'>
+</p>
 </form>

@@ -1,20 +1,5 @@
-// angular
-//   .module('app')
-//   .component('fountainState', {
-//     templateUrl: 'app/store/states.html',
-//     controller:StatesCtrl
-//   });
-// function StatesCtrl($scope){
-//   $scope.States = function(DogName){
-//     console.log(DogName);
-//   }
-// }
 angular
   .module('app')
-  .component('fountainStates', {
-    templateUrl: 'app/store/form.html',
-    controller: KnewCtrl
+  .component('fountainState', {
+    templateUrl: 'app/store/states.html'
   });
-  function KnewCtrl($scope){
-    console.log('do you think this will work?');
-  }

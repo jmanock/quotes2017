@@ -56,5 +56,11 @@ angular
     $scope.States = function(DogName){
       console.log(DogName);
     }
+    $scope.Something = function(DogName){
+      console.log(DogName);
+    }
+    $scope.SomethingElse = function(DogName){
+      console.log(DogName);
+    }
 
   }
