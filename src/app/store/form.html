@@ -54,11 +54,11 @@
   <p>Pick something Else that is fun
     <select name="" id="" ng-model='DogName.somethingElse'>
       <option value="" ng-repeat='x in so'>{{x.Name}}</option>
-      <input type="button" value='Next' ng-click='SomethingElse(DogName)'>
+      <input type="button" value='Next' ng-click='Something(DogName)'>
     </select>
   </p>
-  <input type="button" value='Next' ng-click='States(DogName)'>
+  <input type="button" value='Next' ng-click='Something(DogName)'>
 <p ng-include='"app/store/states.html"' ng-model=DogName.states>
-  <input type="button" value='Next' ng-click='States(DogName)'>
+  <input type="button" value='Next' ng-click='Something(DogName)'>
 </p>
 </form>

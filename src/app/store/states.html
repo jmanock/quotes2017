@@ -1,4 +1,4 @@
-<select name="States">
+<select name="States" ng-model='DogName.state'>
   <option value="" disabled selected>Select A State</option>
   <option value="Alabama">Alabama</option>
   <option value="Alaska">Alaska</option>
@@ -51,3 +51,4 @@
   <option value="Wisconsin">Wishconsin</option>
   <option value="Wyoming">Wyoming</option>
 </select>
+<input type="button" value='Next' ng-click='States(DogName)'>
