@@ -287,281 +287,273 @@ angular
       {name:'French Pointer'},
       {name:'French Spaniel'},
       {name:'Gammel Dansk Honsehund'},
-      {name:''}
-
-      <option value='FrenchBulldog'>French Bulldog</option>
-      <option value='FrenchPointer'>French Pointer</option>
-      <option value='FrenchSpaniel'>French Spaniel</option>
-      <option value='GammelDanskHonsehund'>Gammel Dansk Honsehund</option>
-      <option value='GermanHovawart'>German Hovawart</option>
-      <option value='GermanHuntingTerrier'>German Hunting Terrier</option>
-      <option value='GermanLong-HairedPointer'>German Long-Haired Pointer</option>
-      <option value='GermanPinscher'>German Pinscher</option>
-      <option value='GermanShepherd'>German Shepherd</option>
-      <option value='GermanShepherdMix'>German Shepherd Mix</option>
-      <option value='GermanShorthairedPointer'>German Shorthaired Pointer</option>
-      <option value='GermanSpaniel'>German Spaniel</option>
-      <option value='GermanWirehairedPointer'>German Wirehaired Pointer</option>
-      <option value='GlenOfImaalTerrier'>Glen of Imaal Terrier</option>
-      <option value='GoldenRetriever'>Golden Retriever</option>
-      <option value='Goldendoodle'>Goldendoodle</option>
-      <option value='GordonSetter'>Gordon Setter</option>
-      <option value='GrandAnglo-Francais'>Grand Anglo-Francais</option>
-      <option value='GrandBleuDeGascogne'>Grand Bleu De Gascogne</option>
-      <option value='GrandGasconSaintongeois'>Grand Gascon Saintongeois</option>
-      <option value='GrandGriffonVendeen'>Grand Griffon Vendeen</option>
-      <option value='GreatDane'>Great Dane</option>
-      <option value='GreatPyrenees'>Great Pyrenees</option>
-      <option value='GreatSpitz'>Great Spitz</option>
-      <option value='GreaterSwissMountainDog'>Greater Swiss Mountain Dog</option>
-      <option value='GreekHound'>Greek Hound</option>
-      <option value='Greenland'>Greenland</option>
-      <option value='Greyhound'>Greyhound</option>
-      <option value='GriffonBrabancon'>Griffon Brabancon</option>
-      <option value='GriffonFauveDeBretagne'>Griffon Fauve De Bretagne</option>
-      <option value='GriffonNivernais'>Griffon Nivernais</option>
-      <option value='GrosserMunsterlander'>Grosser Munsterlander</option>
-      <option value='HairlessDog'>Hairless Dog</option>
-      <option value='Haldenstover'>Haldenstover</option>
-      <option value='HamiltonHound'>Hamilton Hound</option>
-      <option value='HanoverHound'>Hanover Hound</option>
-      <option value='Harlekinpinscher'>Harlekinpinscher</option>
-      <option value='Havanese'>Havanese</option>
-      <option value='Heeler'>Heeler</option>
-      <option value='Hokkaidoken'>Hokkaidoken</option>
-      <option value='Hovawart'>Hovawart</option>
-      <option value='HuntTerrier'>Hunt Terrier</option>
-      <option value='Hygenhund'>Hygenhund</option>
-      <option value='IbizanHound'>Ibizan Hound</option>
-      <option value='IcelanSheepdog'>Iceland Sheepdog</option>
-      <option value='IllyrianSheepdog'>Illyrian Sheepdog</option>
-      <option value='IrishSetter'>Irish Setter</option>
-      <option value='IrishTerrier'>Irish Terrier</option>
-      <option value='IrishWaterSpaniel'>Irish Water Spaniel</option>
-      <option value='IrishWolfhound'>Irish Wolfhound</option>
-      <option value='ItalianGreyhound'>Italian Greyhound</option>
-      <option value='ItalianHound'>Italian Hound</option>
-      <option value='ItalianSpinone'>Italian Spinone</option>
-      <option value='JackRussell'>Jack Russell</option>
-      <option value='JapaneseChin'>Japanese Chin</option>
-      <option value='JapanesseSpitz'>Japanese Spitz</option>
-      <option value='Jindo'>Jindo</option>
-      <option value='JuraHound'>Jura Hound</option>
-      <option value='KaiDog'>Kai Dog</option>
-      <option value='KarelianBearDog'>Karelian Bear Dog</option>
-      <option value='KarsySheepdog'>Karst Sheepdog</option>
-      <option value='Keeshond'>Keeshond</option>
-      <option value='KerryBlueTerrier'>Kerry Blue Terrier</option>
-      <option value='KishuKen'>Kishu Ken</option>
-      <option value='KleninerMusterlander'>Kleiner Musterlander</option>
-      <option value='Komondor'>Komondor</option>
-      <option value='Kooikerhondje'>Kooikerhondje</option>
-      <option value='Kromfohrlander'>Kromfohrlander</option>
-      <option value='Kuvasz'>Kuvasz</option>
-      <option value='Kyushu'>Kyushu</option>
-      <option value='LabMix'>Lab Mix</option>
-      <option value='Labradoodle'>Labradoodle</option>
-      <option value='LabradorRetriever'>Labrador Retriever</option>
-      <option value='LagottoRomagnolo'>Lagotto Romagnolo</option>
-      <option value='LakelandTerrier'>Lakeland Terrier</option>
-      <option value='LancashireHeeler'>Lancashire Heeler</option>
-      <option value='Landseer'>Landseer</option>
-      <option value='Laphund'>Lapphund</option>
-      <option value='LapponianHerder'>Lapponian Herder</option>
-      <option value='Leonberger'>Leonberger</option>
-      <option value='Levesque'>Levesque</option>
-      <option value='LhasaApso'>Lhasa Apso</option>
-      <option value='Lhasapoo'>Lhasapoo</option>
-      <option value='LittleLionDog'>Little Lion Dog</option>
-      <option value='Lowchen'>Lowchen</option>
-      <option value='LucerneseHound'>Lucernese Hound</option>
-      <option value='Lundehund'>Lundehund</option>
-      <option value='MagyarAgar'>Magyar Agar</option>
-      <option value='Malshi'>Malshi</option>
-      <option value='Maltese'>Maltese</option>
-      <option value='Maltipom'>Maltipom</option>
-      <option value='Maltipoo'>Maltipoo</option>
-      <option value='ManchesterTerrier'>Manchester Terrier</option>
-      <option value='ManchesterTerrierToy'>Manchester Terrier, Toy</option>
-      <option value='MaremmaSheepdog'>Maremma Sheepdog</option>
-      <option value='Mastiff'>Mastiff</option>
-      <option value='McNab'>McNab</option>
-      <option value='MexicanHairless'>Mexican Hairless</option>
-      <option value='MinatureAmericanShepherd'>Minature American Shepherd</option>
-      <option value='MinatureAustralianShepherd'>Minature Australian Shepherd</option>
-      <option value='MiniDachshund'>Mini Dachshund</option>
-      <option value='MiniatureBullTerrier'>Miniature Bull Terrier</option>
-      <option value='MiniaturePinscher'>Miniature Pinscher</option>
-      <option value='MiniaturePoodle'>Miniature Poodle</option>
-      <option value='MixElevenToTwentyFourPounds'>Mix Eleven to Twenty Four Pounds</option>
-      <option value='MixFiftyToSeventyFourPounds'>Mix Fifty to Seventy Four Pounds</option>
-      <option value='MixLessTanTenPounds'>Mix less than Ten Pounds</option>
-      <option value='MixOneHundredToOneHundredAndFourtyNinePounds'>Mix One Hundred to One Hundred and Fourty Nine Pounds</option>
-      <option value='MixOveroneHundredAndFourtyNinePounds'>Mix Over One Hundred and Fourty Nine Pounds</option>
-      <option value='MixSeventyFiveToNinetyNinePounds'>Mix Seventy Five to Ninety Nine Pounds</option>
-      <option value='MixTwentyFiveToFortyNinePounds'>Mix Twenty Five to Forty Nine Pounds</option>
-      <option value='Morkie'>Morkie</option>
-      <option value='MountainCur'>Mountain Cur</option>
-      <option value='Mudi'>Mudi</option>
-      <option value='Munsterlander'>Munsterlander</option>
-      <option value='NeapolitanMastiff'>Neapolitan Mastiff</option>
-      <option value='NewGuineaSingingDog'>New Guinea Singing Dog</option>
-      <option value='Newfoundland'>Newfoundland</option>
-      <option value='NorfolkTerrier'>Norfolk Terrier</option>
-      <option value='Norrbottenspets'>Norrbottenspets</option>
-      <option value='NorskBuhund'>Norsk Buhund</option>
-      <option value='NorwegianBuhund'>Norwegian Buhund</option>
-      <option value='NorwegianElkhound'>Norwegian Elkhound</option>
-      <option value='NorwegianLundehund'>Norwegian Lundehund</option>
-      <option value='NorwichTerrier'>Norwich Terrier</option>
-      <option value='NovaScotiaDuckTollingRetriever'>Nova Scotia Duck Tolling Retriever</option>
-      <option value='OldeEnglishBulldogge'>Olde English Bulldogge</option>
-      <option value='OldeEnglishSheepdog'>Olde English Sheepdog</option>
-      <option value='Otterhound'>Otterhound</option>
-      <option value='Papillon'>Papillon</option>
-      <option value='Papoo'>Papoo</option>
-      <option value='ParsonRussellTerrier'>Parson Russell Terrier</option>
-      <option value='PatterdaleTerrier'>Patterdale Terrier</option>
-      <option value='Peek-A-Pom'>Peek-A-Pom</option>
-      <option value='Pekepoo'>Pekepoo</option>
-      <option value='Pekingese'>Pekingese</option>
-      <option value='PerdigueroDeBurgos'>Perdiguero De Burgos</option>
-      <option value='PerdigueroPortuges'>Perdiguero Portugues</option>
-      <option value='PeruvianIncaOrchid'>Peruvian Inca Orchid</option>
-      <option value='PetitAnglo-Francais'>Petit Anglo-Francais</option>
-      <option value='PetitBleuDeGascongne'>Petit Bleu De Gascogne</option>
-      <option value='PetitGriffonBleuDeGascongne'>Petit Griffon Bleu De Gascogne</option>
-      <option value='PetiteBassetGriffon'>Petite Basset Griffon</option>
-      <option value='PharaohHound'>Pharaoh Hound</option>
-      <option value='PicardySheepdog'>Picardy Sheepdog</option>
-      <option value='PicardySpaniel'>Picardy Spaniel</option>
-      <option value='Pinscher'>Pinscher</option>
-      <option value='PitBull'>Pit Bull</option>
-      <option value='PitMix'>Pit Mix</option>
-      <option value='PlottHound'>Plott Hound</option>
-      <option value='PodencoIbicenco'>Podenco ibicenco</option>
-      <option value='PodengoPortugueso'>Podengo Portugueso</option>
-      <option value='Pointer'>Pointer</option>
-      <option value='Poitevin'>Poitevin</option>
-      <option value='PolishHound'>Polish Hound</option>
-      <option value='PolishLowlandSheepdog'>Polish Lowland Sheepdog</option>
-      <option value='PolishOwczarekNizinny'>Polish Owczarek Nizinny</option>
-      <option value='PolishTatraSheepdog'>Polish Tatra Sheepdog</option>
-      <option value='Pomchi'>Pomchi</option>
-      <option value='Pomeranian'>Pomeranian</option>
-      <option value='Pont-AudemereSpaniel'>Pont-Audemere Spaniel</option>
-      <option value='PoodleMinature'>Poodle, Minature</option>
-      <option value='PoodleStandard'>Poodle, Standard</option>
-      <option value='PoodleToy'>Poodle, Toy</option>
-      <option value='Porcelaine'>Porcelaine</option>
-      <option value='PortuguesePodengo'>Portuguese Podengo</option>
-      <option value='PortuguesePointer'>Portuguese Pointer</option>
-      <option value='PortugeseWaterDog'>Portuguese Water Dog</option>
-      <option value='PosavacHound'>Posavac Hound</option>
-      <option value='PresaCanario'>Presa Canario</option>
-      <option value='Pudelpointer'>Pudelpointer</option>
-      <option value='Pug'>Pug</option>
-      <option value='Puggle'>Puggle</option>
-      <option value='Puli'>Puli</option>
-      <option value='Pumi'>Pumi</option>
-      <option value='PyreneanMastiff'>Pyrenean Mastiff</option>
-      <option value='PyreneanShepherd'>Pyrenean Shepherd</option>
-      <option value='QueenslandHeeler'>Queensland Heeler</option>
-      <option value='RafeiroDoALentejo'>Rafeiro Do Alentejo</option>
-      <option value='RastreadorBrasileiro'>Rastreador Brasileiro</option>
-      <option value='RatTerrier'>Rat Terrier</option>
-      <option value='RedboneCoonhound'>Redbone Coonhound</option>
-      <option value='RedtickCoonhound'>Redtick Coonhound</option>
-      <option value='RhodesianRidgeback'>Rhodesian Ridgeback</option>
-      <option value='RottiMix'>Rotti Mix</option>
-      <option value='Rottweiler'>Rottweiler</option>
-      <option value='Rough-CoatedBohemainPointer'>Rough-Coated Bohemain Pointer</option>
-      <option value='SabuesoEspanol'>Sabueso Espanol</option>
-      <option value='SaintBernard'>Saint Bernard</option>
-      <option value='Saluki'>Saluki</option>
-      <option value='Samoyed'>Samoyed</option>
-      <option value='Sanshu'>Sanshu</option>
-      <option value='Sarplaninac'>Sarplaninac</option>
-      <option value='Schapendoes'>Schapendoes</option>
-      <option value='Schillerstovare'>Schillerstovare</option>
-      <option value='Schipperke'>Schipperke</option>
-      <option value='SchnauzerGiant'>Schnauzer, Giant</option>
-      <option value='SchnauzerMiniature'>Schnauzer, Miniature</option>
-      <option value='SchanuzerStandard'>Schnauzer, Standard</option>
-      <option value='Schnoodle'>Schnoodle</option>
-      <option value='ScottishDeerhound'>Scottish Deerhound</option>
-      <option value='ScottishTerrier'>Scottish Terrier</option>
-      <option value='SealyhamTerrier'>Sealyham Terrier</option>
-      <option value='Shar-Pei'>Shar-Pei</option>
-      <option value='Sheltie'>Sheltie</option>
-      <option value='ShetlandSheepdog'>Shetland Sheepdog</option>
-      <option value='ShibaInuDogs'>Shiba Inu Dogs</option>
-      <option value='ShihTzu'>Shih Tzu</option>
-      <option value='Shihpoo'>Shihpoo</option>
-      <option value='ShilohShepherd'>Shiloh Shepherd</option>
-      <option value='SiberianHusky'>Siberian Husky</option>
-      <option value='SilkyTerrier'>Silky Terrier</option>
-      <option value='SkyeTerrier'>Skye Terrier</option>
-      <option value='Sloughi'>Sloughi</option>
-      <option value='SlovakTchouvatch'>Slovak Tchouvatch</option>
-      <option value='Smalandsstovare'>Smalandsstovare</option>
-      <option value='SmallContinentalSpaniel'>Small Continental Spaniel</option>
-      <option value='SmallGrayElkDog'>Small Gray Elk Dog</option>
-      <option value='SmallSpitz'>Small Spitz</option>
-      <option value='SmallSwissHound'>Small Swiss Hound</option>
-      <option value='Smooth-HairedIstrianHound'>Smooth-Haired Istrian Hound</option>
-      <option value='Smooth-MuzzledPyreneesSheepdog'>Smooth-Muzzled Pyrenees Sheepdog</option>
-      <option value='SoftCoatedWheatenTerrier'>Soft Coated Wheaten Terrier</option>
-      <option value='Soft-CoatedGriffon'>Soft-Coated Griffon</option>
-      <option value='SomersetHarrier'>Somerset Harrier</option>
-      <option value='SouthAfricanBoerboel'>South African Boerboel</option>
-      <option value='SouthRussianOvcharka'>South Russian Ovcharka</option>
-      <option value='SpanishGreyhound'>Spanish Greyhound</option>
-      <option value='SpinoneItaliano'>Spinone Italiano</option>
-      <option value='Staby-houn'>Staby-houn</option>
-      <option value='StaffordshireBullTerriers'>Staffordshire Bull Terriers</option>
-      <option value='Steinbracke'>Steinbracke</option>
-      <option value='Stichelhaar'>Stichelhaar</option>
-      <option value='SussexSpaniel'>Sussex Spaniel</option>
-      <option value='SwedishElkhound'>Swedish Elkhound</option>
-      <option value='SwedishShepherd'>Swedish Shepherd</option>
-      <option value='SwedishVallhund'>Swedish Vallhund</option>
-      <option value='SwisHound'>Swiss Hound</option>
-      <option value='Tamaskan'>Tamaskan</option>
-      <option value='TatraSheepdog'>Tatra Sheepdog</option>
-      <option value='Telomian'>Telomian</option>
-      <option value='ThaiRidgeback'>Thai Ridgeback</option>
-      <option value='TibetanMastiff'>Tibetan Mastiff</option>
-      <option value='TibetanSpaniel'>Tibetan Spaniel</option>
-      <option value='TibetanTerrier'>Tibetan Terrier</option>
-      <option value='TosaInu'>Tosa Inu</option>
-      <option value='ToyTerrier'>Toy Terrier</option>
-      <option value='TransylvanianHound'>Transylvanian Hound</option>
-      <option value='TreeingTennesseeBrindle'>Treeing Tennessee Brindle</option>
-      <option value='TreeingWalkerCoonhound'>Treeing Walker Coonhound</option>
-      <option value='TriggHound'>Trigg Hound</option>
-      <option value='TyroleanHound'>Tyrolean Hound</option>
-      <option value='ValeeSheepdog'>Valee Sheepdog</option>
-      <option value='Vizsla'>Vizsla</option>
-      <option value='VolpinoItaliano'>Volpino Italiano</option>
-      <option value='Weimaraner'>Weimaraner</option>
-      <option value='WelshCorgiCardigan'>Welsh Corgi, Cardigan</option>
-      <option value='WelshCorgiPembroke'>Welsh Corgi, Pembroke</option>
-      <option value='WelshSpringerSpaniel'>Welsh Springer Spaniel</option>
-      <option value='WelshTerrier'>Welsh Terrier</option>
-      <option value='WestHighlandWhiteTerrier'>West Highland White Terrier</option>
-      <option value='Westie'>Westie</option>
-      <option value='Westiepoo'>Westiepoo</option>
-      <option value='Wetterhoun'>Wetterhoun</option>
-      <option value='Whippet'>Whippet</option>
-      <option value='WirehairedPointingGriffon'>Wirehaired Pointing Griffon</option>
-      <option value='WirehairedStyrianMountainHound'>Wirehaired Styrian Mountain Hound</option>
-      <option value='WolfHybrid'>Wolf Hybrid</option>
-      <option value='Xoloitzcuintli'>Xoloitzcuintli</option>
-      <option value='Yorkiepoo'>Yorkiepoo</option>
-      <option value='YorkshireTerrier'>Yorkshire Terrier</option>
-      <option value='YugoslavianMountainHound'>Yugoslavian Mountain Hound</option>
-      <option value='YugoslacianTricolorHound'>Yugoslavian Tricolor Hound</option>
-
+      {name:'German Hovawart'},
+      {name:'German Hunting Terrier'},
+      {name:'German Long-Haired Pointer'},
+      {name:'German Pinscher'},
+      {name:'German Shepherd'},
+      {name:'German Shepherd Mix'},
+      {name:'German Shorthaired Pointer'},
+      {name:'German Spaniel'},
+      {name:'German Wirehaired Pointer'},
+      {name:'Glen of Imaal Terrier'},
+      {name:'Golden Retriever'},
+      {name:'Goldendoodle'},
+      {name:'Gordon Setter'},
+      {name:'Grand Anglo-Francais'},
+      {name:'Grand Bleu De Gascogne'},
+      {name:'Grand Gascon Saintongeois'},
+      {name:'Grand Griffon Vendeen'},
+      {name:'Great Dane'},
+      {name:'Great Pyrenees'},
+      {name:'Great Spitz'},
+      {name:'Greater Swiss Mountain Dog'},
+      {name:'Greek Hound'},
+      {name:'Greenland'},
+      {name:'Greyhound'},
+      {name:'Griffon Brabancon'},
+      {name:'Griffon Fauve De Bretagne'},
+      {name:'Griffon Nivernais'},
+      {name:'Grosser Musterlander'},
+      {name:'Hairless Dog'},
+      {name:'Haldenstover'},
+      {name:'Hamilton Hound'},
+      {name:'Hanover Hound'},
+      {name:'Harlekinpinscher'},
+      {name:'Havanese'},
+      {name:'Heeler'},
+      {name:'Hokkaidoken'},
+      {name:'Hovawart'},
+      {name:'Hunt Terrier'},
+      {name:'Hygenhund'},
+      {name:'Ibizan Hound'},
+      {name:'Icelan Sheepdog'},
+      {name:'Illyrian Sheepdog'},
+      {name:'Irish Setter'},
+      {name:'Irish Terrier'},
+      {name:'Irish Warter Spaniel'},
+      {name:'Irish Wolfhound'},
+      {name:'Italian Greyhound'},
+      {name:'Italian Hound'},
+      {name:'Italian Spinone'},
+      {name:'Jack Russell'},
+      {name:'Japanese Chin'},
+      {name:'Japanese Spitz'},
+      {name:'Jindo'},
+      {name:'Jura Hound'},
+      {name:'Kai Dog'},
+      {name:'Karelian Bear Dog'},
+      {name:'Karst Sheepdog'},
+      {name:'Keeshond'},
+      {name:'Kerry Blue Terrier'},
+      {name:'Kishu Ken'},
+      {name:'Kleiner Musterlander'},
+      {name:'Komondor'},
+      {name:'Kooikerhondje'},
+      {name:'Kromfohrlander'},
+      {name:'Kuvasz'},
+      {name:'Kyushu'},
+      {name:'Lab Mix'},
+      {name:'Labradoodle'},
+      {name:'Labrador Retriever'},
+      {name:'Lagotto Romagnolo'},
+      {name:'Lakeland Terrier'},
+      {name:'Lancashire Heeler'},
+      {name:'Landseer'},
+      {name:'Lapphund'},
+      {name:'Lapponian Herder'},
+      {name:'Leonberger'},
+      {name:'Levesque'},
+      {name:'Lhasa Apso'},
+      {name:'Lhasapoo'},
+      {name:'Little Lion Dog'},
+      {name:'Lowchen'},
+      {name:'Lucernese Hound'},
+      {name:'Lundehund'},
+      {name:'Magyar Agar'},
+      {name:'Malshi'},
+      {name:'Maltese'},
+      {name:'Maltipom'},
+      {name:'Maltipoo'},
+      {name:'Manchester Terrier'},
+      {name:'Manchester Terrier, Toy'},
+      {name:'Maremma Sheepdog'},
+      {name:'Mastiff'},
+      {name:'McNab'},
+      {name:'Mexican Hairless'},
+      {name:'Minature American Shepherd'},
+      {name:'Minature Australian Shepherd'},
+      {name:'Mini Dachshund'},
+      {name:'Miniature Bull Terrier'},
+      {name:'Miniature Pinscher'},
+      {name:'Miniature Poodle'},
+      {name:'Mix Eleven to Twenty Four Pounds'},
+      {name:'Mix Fifty to Seventy Four Pounds'},
+      {name:'Mix less that Ten Pounds'},
+      {name:'Mix One Hundred to One Hundred and Fourty Nine Pounds'},
+      {name:'Mix Over One Hundred and Fourty Nine Pounds'},
+      {name:'Mix Seventy Five to Ninety Nine Pounds'},
+      {name:'Mix Twenty Five to Forty Nine Pounds'},
+      {name:'Morkie'},
+      {name:'Mountain Cur'},
+      {name:'Mudi'},
+      {name:'Musterlander'},
+      {name:'Neapolitan Mastiff'},
+      {name:'New Guinea Singing Dog'},
+      {name:'Newfoundland'},
+      {name:'Norfolk Terrier'},
+      {name:'Norrbottenspets'},
+      {name:'Norsk Buhund'},
+      {name:'Norwegian Buhund'},
+      {name:'Norwegian Elkhound'},
+      {name:'Norwegian Lundehund'},
+      {name:'Norwich Terrier'},
+      {name:'Nova Scotia Duck Tolling Retriever'},
+      {name:'Olde English Bulldogge'},
+      {name:'Olde English Sheepdog'},
+      {name:'Otterhound'},
+      {name:'Papillon'},
+      {name:'Papoo'},
+      {name:'Parson Russell Terrier'},
+      {name:'Patterdale Terrier'},
+      {name:'Peek-A-Pom'},
+      {name:'Pekepoo'},
+      {name:'Pekingese'},
+      {name:'Perdiguero De Burgos'},
+      {name:'Perdiguero Portugues'},
+      {name:'Peruvian Inca Orchid'},
+      {name:'Petit Anglo-Francais'},
+      {name:'Petit Bleu De Gascogne'},
+      {name:'Petit Griffon Bleu De Gascogne'},
+      {name:'Petite Basset Griffon'},
+      {name:'Pharaoh Hound'},
+      {name:'Picardy Sheepdog'},
+      {name:'Picardy Spaniel'},
+      {name:'Pinscher'},
+      {name:'Pit Bull'},
+      {name:'Pit Mix'},
+      {name:'Plott Hound'},
+      {name:'Podenco Ibicenco'},
+      {name:'Podengo Portugueso'},
+      {name:'Pointer'},
+      {name:'Poitevin'},
+      {name:'Polish Hound'},
+      {name:'Polish Lowland Sheepdog'},
+      {name:'Polish Owczarek Nizinny'},
+      {name:'Polish Tatra Sheepdog'},
+      {name:'Pomchi'},
+      {name:'Pomeranian'},
+      {name:'Pont-Audemere Spaniel'},
+      {name:'Poodle, Minature'},
+      {name:'Poodle, Standard'},
+      {name:'Poodle, Toy'},
+      {name:'Porcelaine'},
+      {name:'Portuguese Podengo'},
+      {name:'Portuguese Pointer'},
+      {name:'Portuguese Water Dog'},
+      {name:'Posavac Hound'},
+      {name:'Presa Canario'},
+      {name:'Pudelpointer'},
+      {name:'Pug'},
+      {name:'Puggle'},
+      {name:'Puli'},
+      {name:'Pumi'},
+      {name:'Pyrenean Mastiff'},
+      {name:'Pyrenean Shepherd'},
+      {name:'Queensland Heeler'},
+      {name:'Rafeiro Do Alentejo'},
+      {name:'Rastreador Brasileiro'},
+      {name:'Rat Terrier'},
+      {name:'Redbone Connhound'},
+      {name:'Redtick Coonhound'},
+      {name:'Rhodesian Ridgeback'},
+      {name:'Rotti Mix'},
+      {name:'Rottweiler'},
+      {name:'Rough-Coated Bohemain Pointer'},
+      {name:'Sabueso Espanol'},
+      {name:'Saint Bernard'},
+      {name:'Saluki'},
+      {name:'Samoyed'},
+      {name:'Sanshu'},
+      {name:'Sarplaninac'},
+      {name:'Schapendoes'},
+      {name:'Schillerstovare'},
+      {name:'Schipperke'},
+      {name:'Schnauzer, Giant'},
+      {name:'Schnauzer, Miniature'},
+      {name:'Schnauzer, Standard'},
+      {name:'Schnoodle'},
+      {name:'Scottish Deerhound'},
+      {name:'Scottish Terrier'},
+      {name:'Sealyham Terrier'},
+      {name:'Shar-Pei'},
+      {name:'Sheltie'},
+      {name:'Shetland Sheepdog'},
+      {name:'Shiba Inu Dog'},
+      {name:'Shih Tzu'},
+      {name:'Shihpoo'},
+      {name:'Shiloh Shepherd'},
+      {name:'Siberian Husky'},
+      {name:'Silky Terrier'},
+      {name:'Skye Terrier'},
+      {name:'Sloughi'},
+      {name:'Slovak Tchouvatch'},
+      {name:'Smalandsstovare'},
+      {name:'Small Continental Spaniel'},
+      {name:'Small Gray Elk Dog'},
+      {name:'Small Spitz'},
+      {name:'Small Swiss Hound'},
+      {name:'Smooth-Haired Istrian Hound'},
+      {name:'Smooth-Muzzled Pyreness Sheepdog'},
+      {name:'Soft Coated Wheaten'},
+      {name:'Soft-Coated Griffon'},
+      {name:'Somerset Harrier'},
+      {name:'Sount African Boerboel'},
+      {name:'South Russian Ovcharka'},
+      {name:'Spanish Greyhound'},
+      {name:'Spinone Italiano'},
+      {name:'Staby-hound'},
+      {name:'Staffordshire Bull Terrier'},
+      {name:'Steinbracke'},
+      {name:'Stichelhaar'},
+      {name:'Sussex Spaniel'},
+      {name:'Swedish Elkhound'},
+      {name:'Swedish Shepherd'},
+      {name:'Swedish Vallhund'},
+      {name:'Swiss Hound'},
+      {name:'Tamaskan'},
+      {name:'Tatra Sheepdog'},
+      {name:'Thai Ridgeback'},
+      {name:'Tibetan Mastiff'},
+      {name:'Tibetan Spaniel'},
+      {name:'Tibetan Terrier'},
+      {name:'Tosa Inu'},
+      {name:'Trasylvania Hound'},
+      {name:'Toy Terrier'},
+      {name:'Treeing Tennessee Brindle'},
+      {name:'Treeing Walker Connhound'},
+      {name:'Trigg Hound'},
+      {name:'Tyrolean Hound'},
+      {name:'Valee Sheepdog'},
+      {name:'Vizsla'},
+      {name:'Volpino Italiano'},
+      {name:'Weimaraner'},
+      {name:'Welsh Corgi, Cardigan'},
+      {name:'Welsh Corgi, Pembroke'},
+      {name:'Welsh Springer Spaniel'},
+      {name:'Welsh Terrier'},
+      {name:'West Highland WHite Terrier'},
+      {name:'Westie'},
+      {name:'Westiepoo'},
+      {name:'Wetterhound'},
+      {name:'Whippet'},
+      {name:'Wirehaired Pointing Griffon'},
+      {name:'Wirehaired Styrian Mountain Hound'},
+      {name:'Wolf Hybrid'},
+      {name:'Xoloitzcuintli'},
+      {name:'Yorkiepoo'},
+      {name:'Yorkshire Terrier'},
+      {name:'Yugoslavian Mountain Hound'},
+      {name:'Yugoslavian Triecolor Hound'}
     ]
   } // End of controller
