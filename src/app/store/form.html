@@ -39,26 +39,18 @@
     <fountain-state ng-model='DogName.state'></fountain-state>
     <input type="button" ng-click='State(DogName)' value='Next'>
   </p> -->
-<p ng-repeat='s in something'>{{s.name}}</p>
-  <p>What breed is your dog?
-    <fountain-breeds></fountain-breeds>
-    <input type="button" value='Next' ng-click='Breed(DogName)'>
-  </p>
-  <p>Pick something fun
-    <select name="" id="" ng-model='DogName.something'>
-      <option ng-repeat='s in so'>{{s.Name}}</option>
-      <input type="button" value='submit' ng-click='Something(DogName)'>
+
+  <p>What States does {{DogName.name}} live in?
+    <select name="" id="" ng-model='DogName.state'>
+      <option value="" ng-repeat='s in states'>{{s.name}}</option>
+      <input type="button" value='Next' ng-click='States(DogName)'>
     </select>
   </p>
-  <p ng-include='"app/store/states.html"' ></p>
-  <p>Pick something Else that is fun
-    <select name="" id="" ng-model='DogName.somethingElse'>
-      <option value="" ng-repeat='x in so'>{{x.Name}}</option>
-      <input type="button" value='Next' ng-click='Something(DogName)'>
+
+  <p>What Breed is {{DogName.name}}?
+    <select name="" id="" ng-model='DogName.breed'>
+      <option value="" ng-repeat='b in breeds'>{{b.name}}</option>
+      <input type="button" value='Next' ng-click='Breeds(DogName)'>
     </select>
   </p>
-  <input type="button" value='Next' ng-click='Something(DogName)'>
-<p ng-include='"app/store/states.html"' ng-model=DogName.states>
-  <input type="button" value='Next' ng-click='Something(DogName)'>
-</p>
 </form>

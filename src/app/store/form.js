@@ -9,11 +9,6 @@ angular
     /*
       - More than one Question at a time
     */
-    $scope.so = [
-      {Name:'Florida'},
-      {Name:'Illinois'},
-      {Name:'Georiga'}
-    ]
     $scope.Name = function(DogName){
       console.log(DogName);
       $scope.age = true;
@@ -53,7 +48,10 @@ angular
     $scope.Gender = function(DogName){
       console.log(DogName);
     }
-    $scope.Something = function(DogName){
+    $scope.Breeds = function(DogName){
+      console.log(DogName);
+    }
+    $scope.States = function(DogName){
       console.log(DogName);
     }
     $scope.states = [
