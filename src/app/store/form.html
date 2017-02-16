@@ -1,5 +1,5 @@
 <form action="" name='DogForm'>
-  <!-- <p ng-hide='name'>What is the NAME of your Dog?
+  <p ng-hide='name'>What is the NAME of your Dog?
     <input type="text" ng-model='DogName.name'>
     <input type="button" ng-click='Name(DogName)' value='Next'>
   </p>
@@ -14,16 +14,6 @@
     <input type="button" ng-click='Weight(DogName)' value='Next'>
   </p>
 
-  <p ng-show='state'>What STATE does {{DogName.name}} live in?
-    <fountain-state ng-model='DogName.state'></fountain-state>
-    <input type="button" ng-click='State(DogName)' value='Next'>
-  </p>
-
-  <p ng-show='breed'>What BREED is {{DogName.name}}
-    <fountain-breeds ng-model='DogName.breed'></fountain-breeds>
-    <input type="button" ng-click='Breeds(DogName)' value='Next'>
-  </p>
-
   <p ng-show='color'>What COLOR is {{DogName.name}}?
     <input type="text" ng-model='DogName.color'>
     <input type="button" ng-click='Color(DogName)' value='Next'>
@@ -33,24 +23,21 @@
     <input type="radio" ng-model='DogName.gender' value='Male'>Male
     <input type="radio" ng-model='DogName.gender' value='Female'>Female
     <input type="button" ng-click='Gender(DogName)' value='Next'>
-  </p> -->
-<!--
-  <p>What State does your dog live
-    <fountain-state ng-model='DogName.state'></fountain-state>
-    <input type="button" ng-click='State(DogName)' value='Next'>
-  </p> -->
+  </p>
 
-  <p>What States does {{DogName.name}} live in?
+
+  <p ng-show='state'>What States does {{DogName.name}} live in?
     <select name="" id="" ng-model='DogName.state'>
-      <option value="" ng-repeat='s in states'>{{s.name}}</option>
+      <option ng-repeat='s in states'>{{s.name}}</option>
       <input type="button" value='Next' ng-click='States(DogName)'>
     </select>
   </p>
 
-  <p>What Breed is {{DogName.name}}?
+  <p ng-show='breeds'>What Breed is {{DogName.name}}?
     <select name="" id="" ng-model='DogName.breed'>
-      <option value="" ng-repeat='b in breeds'>{{b.name}}</option>
+      <option ng-repeat='b in breeds'>{{b.name}}</option>
       <input type="button" value='Next' ng-click='Breeds(DogName)'>
     </select>
   </p>
+
 </form>
