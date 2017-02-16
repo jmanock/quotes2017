@@ -11,7 +11,7 @@
 // }
 angular
   .module('app')
-  .component('fountainState', {
+  .component('fountainStates', {
     templateUrl: 'app/store/form.html',
     controller: KnewCtrl
   });

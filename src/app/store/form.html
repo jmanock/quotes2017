@@ -50,4 +50,9 @@
       <input type="button" value='submit' ng-click='Something(DogName)'>
     </select>
   </p>
+
+  <div class="something">
+    <p ng-include='"app/store/states.html"' ng-model='DogName.state'></p>
+    <input type="button" value='Next' ng-click='States(DogName)'>
+  </div>
 </form>

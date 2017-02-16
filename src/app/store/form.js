@@ -9,7 +9,6 @@ angular
     /*
       - More than one Question at a time
     */
-    console.log('HelloFriend');
     $scope.so = [
       {Name:'Florida'},
       {Name:'Illinois'},
@@ -54,14 +53,7 @@ angular
     $scope.Gender = function(DogName){
       console.log(DogName);
     }
-
-    $scope.State = function(DogName){
-      console.log(DogName);
-    }
-    $scope.Breed = function(DogName){
-      console.log(DogName);
-    }
-    $scope.Something = function(DogName){
+    $scope.States = function(DogName){
       console.log(DogName);
     }
 
