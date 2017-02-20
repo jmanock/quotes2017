@@ -3,41 +3,57 @@
     <input type="text" ng-model='DogName.name' autofocus>
     <input type="button" ng-click='Name(DogName)' value='Next'>
   </p>
-
+<!--
   <p ng-show='age'>What AGE is {{DogName.name | uppercase}}?
     <input type="number" min='0' max='20' ng-model='DogName.age'>
     <input type="button" ng-click='Age(DogName)' value='Next'>
   </p>
 
-  <p ng-show='weight'>How much does {{DogName.name}} WEIGHT?
+  <p ng-show='weight'>How much does {{DogName.name | uppercase}} WEIGHT?
     <input type="number" min='0' ng-model='DogName.weight'>
     <input type="button" ng-click='Weight(DogName)' value='Next'>
   </p>
 
-  <p ng-show='color'>What COLOR is {{DogName.name}}?
+  <p ng-show='color'>What COLOR is {{DogName.name | uppercase}}?
     <input type="text" ng-model='DogName.color'>
     <input type="button" ng-click='Color(DogName)' value='Next'>
   </p>
 
-  <p ng-show='gender'>What GENDER is {{DogName.name}}?
+  <p ng-show='gender'>What GENDER is {{DogName.name | uppercase}}?
     <input type="radio" ng-model='DogName.gender' value='Male'>Male
     <input type="radio" ng-model='DogName.gender' value='Female'>Female
     <input type="button" ng-click='Gender(DogName)' value='Next'>
   </p>
 
-
-  <p ng-show='state'>What States does {{DogName.name}} live in?
+  <p ng-show='state'>What States does {{DogName.name | uppercase}} live in?
     <select name="" id="" ng-model='DogName.state'>
       <option ng-repeat='s in states'>{{s.name}}</option>
       <input type="button" value='Next' ng-click='States(DogName)'>
     </select>
   </p>
 
-  <p ng-show='breed'>What Breed is {{DogName.name}}?
+  <p ng-show='breed'>What Breed is {{DogName.name | uppercase}}?
     <select name="" id="" ng-model='DogName.breed'>
       <option ng-repeat='b in breeds'>{{b.name}}</option>
       <input type="button" value='Next' ng-click='Breeds(DogName)'>
     </select>
-  </p>
+  </p> -->
+
+  <p>Where does {{DogName.name | uppercase}} go potty?</p>
+  <p>Is there children in the home?</p>
+  <p>Where does {{DogName.name | uppercase}} sleep></p>
+  <p>Do you breed {{DogName.name | uppercase}}</p>
+  <p>Number of Dogs in the home?</p>
+  <p>Veterinarian Visits</p>
+  <p>Have any permanent residents been convicted of animal or domestic abuse in the last 5 years?</p>
+  <p>What type of area do you live in?</p>
+  <p>Compliance with Local Laws</p>
+  <p>Reproductive Status</p>
+  <p>Type of Training</p>
+  <p>Is {{DogName.name | uppercase}} Integral or involved in your work?</p>
+  <p>Human Injury</p>
+  <p>Injured/Killed Another Animal</p>
+  <p>Animal Control</p>
+  <p>Is {{DogName.name | uppercase}} a foster dog?</p>
 
 </form>
