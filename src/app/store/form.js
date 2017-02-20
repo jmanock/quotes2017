@@ -35,12 +35,16 @@ angular
 
     $scope.Gender = function(DogName){
       console.log(DogName);
+      $scope.gender = false;
+      $scope.breed = true;
     }
     $scope.Breeds = function(DogName){
       console.log(DogName);
     }
     $scope.States = function(DogName){
       console.log(DogName);
+      $scope.state = false;
+      $scope.gender = true;
     }
     $scope.states = [
       {name:'Alabama'},

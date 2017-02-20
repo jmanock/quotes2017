@@ -1,10 +1,10 @@
 <form action="" name='DogForm'>
   <p ng-hide='name'>What is the NAME of your Dog?
-    <input type="text" ng-model='DogName.name'>
+    <input type="text" ng-model='DogName.name' autofocus>
     <input type="button" ng-click='Name(DogName)' value='Next'>
   </p>
 
-  <p ng-show='age'>What AGE is {{DogName.name}}?
+  <p ng-show='age'>What AGE is {{DogName.name | uppercase}}?
     <input type="number" min='0' max='20' ng-model='DogName.age'>
     <input type="button" ng-click='Age(DogName)' value='Next'>
   </p>
@@ -33,7 +33,7 @@
     </select>
   </p>
 
-  <p ng-show='breeds'>What Breed is {{DogName.name}}?
+  <p ng-show='breed'>What Breed is {{DogName.name}}?
     <select name="" id="" ng-model='DogName.breed'>
       <option ng-repeat='b in breeds'>{{b.name}}</option>
       <input type="button" value='Next' ng-click='Breeds(DogName)'>
