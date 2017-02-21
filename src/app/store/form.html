@@ -1,120 +1,80 @@
 <form action="" name='DogForm'>
-  <div ng-hide='name'>What is the NAME of your DOG?
+  <section ng-hide='name'>What is the name of your Dog?
     <input type="text" ng-model='DogName.name' required name='dname' autofocus>
     <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
-  </div>
-
+  </section>
   <section ng-show='dogInfo'>
-    <div>How OLD is {{DogName.name | uppercase}}?
-      <input type="number" min='0' max='20' ng-model='DogName.age' required name='age'>
-    </div>
-
-    <div>Is {{DogName.name | uppercase}}
-      <input type="radio" ng-model='DogName.gender' value='Male' name='gender'>Male
-      <input type="radio" ng-model='DogName.gender' value='Female' name='gender'>Female
-    </div>
-
-    <div>What BREED is {{DogName.name | uppercase}}?
-      <select ng-model='DogName.breed' required name='breed'>
-        <option ng-repeat='b in breeds'>{{b.name}}</option>
-      </select>
-    </div>
-
-    <div>How much does {{DogName.name | uppercase}} WEIGHT?
-      <input type="number" min='0' ng-model='DogName.weight' required>
-    </div>
-
-    <div>Where does {{DogName.name | uppercase}} go to the BATHROOM?
-      <select name="" id="" required>
-        <option>Inside completely enclosed fenced area</option>
-        <option>Underground electric dog containment system</option>
-        <option>Outside loose in unfenced yard</option>
-        <option>Permanently Tied/tethered outside</option>
-        <option>On tie line for 1 hour or less at a time</option>
-        <option>In a permanent Outside Kennel</option>
-        <option>Leash Walked</option>
-      </select>
-    </div>
-
-    <div>Where does {{DogName.name | uppercase}} SLEEP?
-      <select name="" id="" ng-model='DogName.sleep' required>
-        <option>Inside Home</option>
-        <option>Garage</option>
-        <option>Outside loose in fenced yard</option>
-        <option>Outside without any restraints</option>
-        <option>Permanent outside kennel</option>
-        <option>Tied Out</option>
-      </select>
-    </div>
-
-    <div>Is {{DogName.name | uppercase}} integral or involved in your work?
-      <input type="radio" value='Yes' ng-model='DogName.work' name='work'>Yes
-      <input type="radio" value='No' ng-model='DogName.work' name='work'>No
-    </div>
-
-    <div>Is {{DogName.name | uppercase}} a FOSTER dog?
-      <input type="radio" value='Yes' ng-model='DogName.foster' name='foster'>Yes
-      <input type="radio" value='No' ng-model='DogName.foster' name='foster'>No
-    </div>
-
-    <div>Is {{DogName.name | uppercase}} FIXED or SPADED?
-      <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed'>Yes
-      <input type="radio" value='No' ng-model='DogName.fixed' name='fixed'>No
-    </div>
+    <ul>
+      <li>How OLD is {{DogName.name | uppercase}}
+        <input type="number" min='0' max='20' ng-model='DogName.age' required>
+      </li>
+      <li>Is {{DogName.name | uppercase}}
+        <input type="radio" ng-model='DogName.gender' value='Male' name='gender'>Male
+        <input type="radio" ng-model='DogName.gender' value='Female' name='gender'>Female
+      </li>
+      <li>What BREED is {{DogName.name | uppercase}}
+        <select ng-model='DogName.breed' name='breed'>
+          <option ng-repeat='b in breeds'>{{b.name}}</option>
+        </select>
+      </li>
+      <li>How much does {{DogName.name | uppercase}} WEIGHT?
+        <input type="number" min='0' ng-model='DogName.weight'>
+      </li>
+      <li>Where does {{DogName.name | uppercase}} go to the BATHROOM?
+        <select ng-model='DogName.bathroom'>
+          <option>Inside completely enclosed fenced area</option>
+          <option>Underground electric dog containment system</option>
+          <option>Outside loose in unfenced yard</option>
+          <option>Permanently Tied/tethered outside</option>
+          <option>On tie line for 1 hour or less at a time</option>
+          <option>In a permanent Outside Kennel</option>
+          <option>Leash Walked</option>
+        </select>
+      </li>
+      <li>Where does {{DogName.name | uppercase}} SLEEP?
+        <select ng-model='DogName.sleep'>
+          <option>Inside Home</option>
+          <option>Garage</option>
+          <option>Outside loose in fenced yard</option>
+          <option>Outside without any restraints</option>
+          <option>Permanent outside kennel</option>
+          <option>Tied Out</option>
+        </select>
+      </li>
+      <li>Is {{DogName.name | uppercase}} integral or involved in your work?
+        <input type="radio" value='Yes' ng-model='DogName.work' name='work'>Yes
+        <input type="radio" value='No' ng-model='DogName.work' name='work'>No
+      </li>
+      <li>Is {{DogName.name | uppercase}} a FOSTER dog?
+        <input type="radio" value='Yes' ng-model='DogName.foster' name='foster'>Yes
+        <input type="radio" value='No' ng-model='DogName.foster' name='foster'>No
+      </li>
+      <li>Is {{DogName.name | uppercase}} FIXED or SPADED?
+        <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed'>Yes
+        <input type="radio" value='No' ng-model='DogName.fixed' name='fixed'>No
+      </li>
+    </ul>
     <input type="button" value='Next' ng-click='DogInfo(DogName)'>
   </section>
-
   <section ng-show='personalInfo'>
-    <div>What is your EMAIL
-
-    </div>
-
-    <div>What STATE does {{DogName.name | uppercase}} live in?
-
-    </div>
-
-    <div>What type of AREA do you live in?
-
-    </div>
-
-    <div>Veterinarian Visits?
-
-    </div>
-
-    <div>Compliance with Local Laws?
-
-    </div>
-
-    <div>What type of TRANNING does {{DogName.name | uppercase}} have?
-
-    </div>
+    <ul>
+      <li>What is your EMAIL</li>
+      <li>What STATE does {{DogName.name | uppercase}} live in?</li>
+      <li>What type of AREA do you live in?</li>
+      <li>Veterinarian Visits?</li>
+      <li>Compliance with Loval Laws?</li>
+      <li>what type of TRANNING does {{DogName.name | uppercase}} have?</li>
+    </ul>
     <input type="button" value='Next' ng-click='PersonalInfo(DogName)'>
   </section>
-
   <section ng-show='homeInfo'>
-    <div>Are there any children in the home?
-
-    </div>
-
-    <div>Number of Dogs in the Home?
-
-    </div>
-
-    <div>Have any permanent residents been convicted of animal or domestic abuse in the last 5 years?
-
-    </div>
-
-    <div>Has {{DogName.name | uppercase}} injured or killed another animal?
-
-    </div>
-
-    <div>Has Animal Control been called?
-
-    </div>
-
-    <div>Human Injury
-
-    </div>
-    <input type="button" value='Done' ng-click='HomeInfo(DogName)'>
+    <ul>
+      <li>Are there any children in the home?</li>
+      <li>Number of Dogs in the Home?</li>
+      <li>Hav any permanent residents been convicted of animal or domestic abuse in the last 5 years?</li>
+      <li>Has {{DogName.name | uppercase}} injured or killed another animal?</li>
+      <li>Has Animal Control been called?</li>
+      <li>Human Injury?</li>
+    </ul>
   </section>
 </form>
