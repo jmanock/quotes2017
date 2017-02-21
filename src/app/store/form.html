@@ -1,59 +1,102 @@
 <form action="" name='DogForm'>
-  <p ng-hide='name'>What is the NAME of your Dog?
+  <div ng-hide='name'>What is the NAME of your DOG?
     <input type="text" ng-model='DogName.name' autofocus>
-    <input type="button" ng-click='Name(DogName)' value='Next'>
-  </p>
-<!--
-  <p ng-show='age'>What AGE is {{DogName.name | uppercase}}?
-    <input type="number" min='0' max='20' ng-model='DogName.age'>
-    <input type="button" ng-click='Age(DogName)' value='Next'>
-  </p>
+    <input type="button" value='Next' ng-click='Name(DogName)'>
+  </div>
 
-  <p ng-show='weight'>How much does {{DogName.name | uppercase}} WEIGHT?
-    <input type="number" min='0' ng-model='DogName.weight'>
-    <input type="button" ng-click='Weight(DogName)' value='Next'>
-  </p>
+  <section ng-show='dogInfo'>
+    <div>How OLD is {{DogName.name | uppercase}}?
+      <input type="number" min='0' max='20' ng-model='DogName.age'>
+    </div>
 
-  <p ng-show='color'>What COLOR is {{DogName.name | uppercase}}?
-    <input type="text" ng-model='DogName.color'>
-    <input type="button" ng-click='Color(DogName)' value='Next'>
-  </p>
+    <div>Is {{DogName.name | uppercase}}
+      <input type="radio" ng-model='DogName.gender' value='Male'>Male
+      <input type="radio" ng-model='DogName.gender' value='Female'>Female
+    </div>
 
-  <p ng-show='gender'>What GENDER is {{DogName.name | uppercase}}?
-    <input type="radio" ng-model='DogName.gender' value='Male'>Male
-    <input type="radio" ng-model='DogName.gender' value='Female'>Female
-    <input type="button" ng-click='Gender(DogName)' value='Next'>
-  </p>
+    <div>What BREED is {{DogName.name | uppercase}}?
+      <select ng-model='DogName.breed'>
+        <option ng-repeat='b in breeds'>{{b.name}}</option>
+      </select>
+    </div>
 
-  <p ng-show='state'>What States does {{DogName.name | uppercase}} live in?
-    <select name="" id="" ng-model='DogName.state'>
-      <option ng-repeat='s in states'>{{s.name}}</option>
-      <input type="button" value='Next' ng-click='States(DogName)'>
-    </select>
-  </p>
+    <div>How much does {{DogName.name | uppercase}} WEIGHT?
+      <input type="number" min='0' ng-model='DogName.weight'>
+    </div>
 
-  <p ng-show='breed'>What Breed is {{DogName.name | uppercase}}?
-    <select name="" id="" ng-model='DogName.breed'>
-      <option ng-repeat='b in breeds'>{{b.name}}</option>
-      <input type="button" value='Next' ng-click='Breeds(DogName)'>
-    </select>
-  </p> -->
+    <div>Where does {{DogName.name | uppercase}} go to the BATHROOM?
 
-  <p>Where does {{DogName.name | uppercase}} go potty?</p>
-  <p>Is there children in the home?</p>
-  <p>Where does {{DogName.name | uppercase}} sleep></p>
-  <p>Do you breed {{DogName.name | uppercase}}</p>
-  <p>Number of Dogs in the home?</p>
-  <p>Veterinarian Visits</p>
-  <p>Have any permanent residents been convicted of animal or domestic abuse in the last 5 years?</p>
-  <p>What type of area do you live in?</p>
-  <p>Compliance with Local Laws</p>
-  <p>Reproductive Status</p>
-  <p>Type of Training</p>
-  <p>Is {{DogName.name | uppercase}} Integral or involved in your work?</p>
-  <p>Human Injury</p>
-  <p>Injured/Killed Another Animal</p>
-  <p>Animal Control</p>
-  <p>Is {{DogName.name | uppercase}} a foster dog?</p>
+    </div>
 
+    <div>Where does {{DogName.name | uppercase}} SLEEP?
+
+    </div>
+
+    <div>Is {{DogName.name | uppercase}} a WORK dog?
+
+    </div>
+
+    <div>Is {{DogName.name | uppercase}} a FOSTER dog?
+
+    </div>
+
+    <div>Is {{DogName.name | uppercase}} FIXED or SPADED?
+
+    </div>
+    <input type="button" value='Next' ng-click='DogInfo(DogName)'>
+  </section>
+
+  <section ng-show='personalInfo'>
+    <div>What is your EMAIL
+
+    </div>
+
+    <div>What STATE does {{DogName.name | uppercase}} live in?
+
+    </div>
+
+    <div>What type of AREA do you live in?
+
+    </div>
+
+    <div>Veterinarian Visits?
+
+    </div>
+
+    <div>Compliance with Local Laws?
+
+    </div>
+
+    <div>What type of TRANNING does {{DogName.name | uppercase}} have?
+
+    </div>
+    <input type="button" value='Next' ng-click='PersonalInfo(DogName)'>
+  </section>
+
+  <section ng-show='homeInfo'>
+    <div>Are there any children in the home?
+
+    </div>
+
+    <div>Number of Dogs in the Home?
+
+    </div>
+
+    <div>Have any permanent residents been convicted of animal or domestic abuse in the last 5 years?
+
+    </div>
+
+    <div>Has {{DogName.name | uppercase}} injured or killed another animal?
+
+    </div>
+
+    <div>Has Animal Control been called?
+
+    </div>
+
+    <div>Human Injury
+
+    </div>
+    <input type="button" value='Done' ng-click='HomeInfo(DogName)'>
+  </section>
 </form>

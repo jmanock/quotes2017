@@ -7,45 +7,25 @@ angular
 
   function FormCtrl($scope){
     /*
-      - More than one Question at a time
+
     */
     $scope.Name = function(DogName){
-      console.log(DogName);
-      $scope.age = true;
       $scope.name = true;
+      $scope.dogInfo = true;
     }
 
-    $scope.Age = function(DogName){
-      $scope.weight = true;
-      $scope.age = false;
+    $scope.DogInfo = function(DogName){
       console.log(DogName);
     }
 
-    $scope.Weight = function(DogName){
+    $scope.PersonalInfo = function(DogName){
       console.log(DogName);
-      $scope.weight = false;
-      $scope.state = true;
     }
 
-    $scope.Color = function(DogName){
+    $scope.HomeInfo = function(DogName){
       console.log(DogName);
-      $scope.color = false;
-      $scope.gender = true;
     }
 
-    $scope.Gender = function(DogName){
-      console.log(DogName);
-      $scope.gender = false;
-      $scope.breed = true;
-    }
-    $scope.Breeds = function(DogName){
-      console.log(DogName);
-    }
-    $scope.States = function(DogName){
-      console.log(DogName);
-      $scope.state = false;
-      $scope.gender = true;
-    }
     $scope.states = [
       {name:'Alabama'},
       {name:'Alaska'},
