@@ -1,31 +1,31 @@
 <form action="" name='DogForm'>
   <div ng-hide='name'>What is the NAME of your DOG?
-    <input type="text" ng-model='DogName.name' autofocus>
-    <input type="button" value='Next' ng-click='Name(DogName)'>
+    <input type="text" ng-model='DogName.name' required name='dname' autofocus>
+    <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
   </div>
 
   <section ng-show='dogInfo'>
     <div>How OLD is {{DogName.name | uppercase}}?
-      <input type="number" min='0' max='20' ng-model='DogName.age'>
+      <input type="number" min='0' max='20' ng-model='DogName.age' required name='age'>
     </div>
 
     <div>Is {{DogName.name | uppercase}}
-      <input type="radio" ng-model='DogName.gender' value='Male'>Male
-      <input type="radio" ng-model='DogName.gender' value='Female'>Female
+      <input type="radio" ng-model='DogName.gender' value='Male' name='gender'>Male
+      <input type="radio" ng-model='DogName.gender' value='Female' name='gender'>Female
     </div>
 
     <div>What BREED is {{DogName.name | uppercase}}?
-      <select ng-model='DogName.breed'>
+      <select ng-model='DogName.breed' required name='breed'>
         <option ng-repeat='b in breeds'>{{b.name}}</option>
       </select>
     </div>
 
     <div>How much does {{DogName.name | uppercase}} WEIGHT?
-      <input type="number" min='0' ng-model='DogName.weight'>
+      <input type="number" min='0' ng-model='DogName.weight' required>
     </div>
 
     <div>Where does {{DogName.name | uppercase}} go to the BATHROOM?
-      <select name="" id="">
+      <select name="" id="" required>
         <option>Inside completely enclosed fenced area</option>
         <option>Underground electric dog containment system</option>
         <option>Outside loose in unfenced yard</option>
@@ -37,7 +37,7 @@
     </div>
 
     <div>Where does {{DogName.name | uppercase}} SLEEP?
-      <select name="" id="">
+      <select name="" id="" ng-model='DogName.sleep' required>
         <option>Inside Home</option>
         <option>Garage</option>
         <option>Outside loose in fenced yard</option>
@@ -48,18 +48,18 @@
     </div>
 
     <div>Is {{DogName.name | uppercase}} integral or involved in your work?
-      <input type="radio" value='Yes' ng-model='DogName.work'>Yes
-      <input type="radio" value='No' ng-model='DogName.work'>No
+      <input type="radio" value='Yes' ng-model='DogName.work' name='work'>Yes
+      <input type="radio" value='No' ng-model='DogName.work' name='work'>No
     </div>
 
     <div>Is {{DogName.name | uppercase}} a FOSTER dog?
-      <input type="radio" value='No' ng-model='DogName.foster'>No
-      <input type="radio" value='Yes' ng-model='DogName.foster'>Yes
+      <input type="radio" value='Yes' ng-model='DogName.foster' name='foster'>Yes
+      <input type="radio" value='No' ng-model='DogName.foster' name='foster'>No
     </div>
 
     <div>Is {{DogName.name | uppercase}} FIXED or SPADED?
-      <input type="radio" value='No' ng-model='DogName.fixed'>No
-      <input type="radio" value='Yes' ng-model='DogName.fixed'>Yes
+      <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed'>Yes
+      <input type="radio" value='No' ng-model='DogName.fixed' name='fixed'>No
     </div>
     <input type="button" value='Next' ng-click='DogInfo(DogName)'>
   </section>
