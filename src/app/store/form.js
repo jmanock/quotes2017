@@ -21,6 +21,8 @@ angular
     }
 
     $scope.PersonalInfo = function(DogName){
+      $scope.homeInfo = true;
+      $scope.personalInfo = false;
       console.log(DogName);
     }
 
