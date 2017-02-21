@@ -8,7 +8,7 @@
       <li>How OLD is {{DogName.name | uppercase}}
         <input type="number" min='0' max='20' ng-model='DogName.age' required>
       </li>
-      <li>Is {{DogName.name | uppercase}}
+      <li>Is {{DogName.name | uppercase}} 
         <input type="radio" ng-model='DogName.gender' value='Male' name='gender'>Male
         <input type="radio" ng-model='DogName.gender' value='Female' name='gender'>Female
       </li>
@@ -95,12 +95,35 @@
   </section>
   <section ng-show='homeInfo'>
     <ul>
-      <li>Are there any children in the home?</li>
-      <li>Number of Dogs in the Home?</li>
-      <li>Hav any permanent residents been convicted of animal or domestic abuse in the last 5 years?</li>
-      <li>Has {{DogName.name | uppercase}} injured or killed another animal?</li>
-      <li>Has Animal Control been called?</li>
-      <li>Human Injury?</li>
+      <li>Are there any children in the home?
+        <select ng-model='DogName.children'>
+          <option>No</option>
+          <option>Children under 16 living in the Home</option>
+          <option>Daycare or baby sitting service in the Home</option>
+          <option>Foster Children in Home</option>
+        </select>
+      </li>
+      <li>Number of Dogs in the Home?
+        <input type="radio" value='1' ng-model='DogName.home' name='home'>1
+        <input type="radio" value='2to4' ng-model='DogName.home' name='home'>2 to 4
+        <input type="radio" value='5orMore' ng-model='DogName.home' name='home'>5 or More
+      </li>
+      <li>Hav any permanent residents been convicted of animal or domestic abuse in the last 5 years?
+        <input type="radio" value='No' ng-model='DogName.abuse' name='abuse'>No
+        <input type="radio" value='Yes' ng-model='DogName.abuse' name='abuse'>Yes
+      </li>
+      <li>Has {{DogName.name | uppercase}} injured or killed another animal?
+        <input type="radio" value='No' ng-model='DogName.killed' name='killed'>No
+        <input type="radio" value='Yes' ng-model='DogName.killed' name='killed'>Yes
+      </li>
+      <li>Has Animal Control been called?
+        <input type="radio" value='No' ng-model='DogName.control' name='control'>No
+        <input type="radio" value='Yes' ng-model='DogName.control' name='control'>Yes
+      </li>
+      <li>Human Injury?
+        <input type="radio" value='No' ng-model='DogName.human' name='human'>No
+        <input type="radio" value='Yes' ng-model='DogName.human' name='human'>Yes
+      </li>
     </ul>
     <input type="button" value='Finished' ng-click='HomeInfo(DogName)'>
   </section>
