@@ -9,9 +9,22 @@ angular
     /*
 
     */
+    $scope.something = function(DogName){
+      console.log(DogName);
+    }
     $scope.Name = function(DogName){
       $scope.name = true;
+      $scope.gender = true;
+    }
+
+    $scope.Gender = function(DogName){
+      $scope.gender = false;
       $scope.dogInfo = true;
+      if(DogName.gender === 'Male'){
+        DogName.genderInfo = 'Neutered';
+      }else{
+        DogName.genderInfo = 'Spayed';
+      }
     }
 
     $scope.DogInfo = function(DogName){
