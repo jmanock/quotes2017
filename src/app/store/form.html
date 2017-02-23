@@ -11,7 +11,6 @@
       <li>Is {{DogName.name | uppercase}}
         <input type="radio" ng-model='DogName.gender' value='Male' name='gender'>Male
         <input type="radio" ng-model='DogName.gender' value='Female' name='gender'>Female
-        <span ng-if='DogName.gender==="Female"?true:false'>Show this shit so it can work</span>
       </li>
       <li>What BREED is {{DogName.name | uppercase}}
         <select ng-model='DogName.breed' name='breed'>
@@ -45,7 +44,10 @@
       <li>Is {{DogName.name | uppercase}} integral or involved in your work?
         <input type="radio" value='Yes' ng-model='DogName.work' name='work'>Yes
         <input type="radio" value='No' ng-model='DogName.work' name='work'>No
-        <span ng-if='DogName.work === "Yes"?true:false'>This should show up also.</span>
+        <span ng-if='DogName.work === "Yes"?true:false'>What is your job?
+          <input type="text" ng-model='DogName.job'>
+        </span>
+
       </li>
       <li>Is {{DogName.name | uppercase}} a FOSTER dog?
         <input type="radio" value='Yes' ng-model='DogName.foster' name='foster'>Yes
@@ -117,7 +119,18 @@
       <li>Has {{DogName.name | uppercase}} injured or killed another animal?
         <input type="radio" value='No' ng-model='DogName.killed' name='killed'>No
         <input type="radio" value='Yes' ng-model='DogName.killed' name='killed'>Yes
-        <span ng-if='DogName.killed==="Yes"?true:false'>Something should also go here!</span>
+        <span ng-if='DogName.killed==="Yes"?true:false'>
+          <input type="radio" value='Injured' ng-model='DogName.injured' name='injured'>
+          <input type="radio" value='Killed' ng-model='DogName.injured' name='injured'>
+        </span>
+        <span ng-if='DogName.injured==="Injured"?true:false'>
+          <input type="radio" value='One' ng-model='DogName.' name='injuredInjured'>Injured ONE animal
+          <input type="raido" value='More' ng-model='DogName.' name='injuredInjured'>Injured MORE than One animal
+        </span>
+        <span ng-if='DogName.injured==="Killed"?true:false'>
+          <input type="raido" value='One' ng-model='DogName.' name='killedKilled'>Killed ONE animal
+          <input type="raido" value='More' ng-model='DogName.' name='killedKilled'>Killed MORE than ONE animal
+        </span>
       </li>
       <li>Has Animal Control been called?
         <input type="radio" value='No' ng-model='DogName.control' name='control'>No
