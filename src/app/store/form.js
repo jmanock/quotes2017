@@ -10,9 +10,9 @@ angular
 
     */
     $scope.something = function(DogName){
-      if(DogName.injure === 'No'){
-        DogName.number = '';
-        DogName.ik = '';
+      if(DogName.human === 'No'){
+        delete(DogName.hc);
+        delete(DogName.HiStatus);
       }
       console.log(DogName);
     }
@@ -47,6 +47,10 @@ angular
       if(DogName.injure === 'No'){
         delete(DogName.number);
         delete(DogName.ik);
+      }
+      if(DogName.human === 'No'){
+        delete(DogName.hc);
+        delete(DogName.HiStatus);
       }
       console.log(DogName);
     }

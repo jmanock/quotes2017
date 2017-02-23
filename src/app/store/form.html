@@ -140,7 +140,16 @@
       <li>Human Injury?
         <input type="radio" value='No' ng-model='DogName.human' name='human'>No
         <input type="radio" value='Yes' ng-model='DogName.human' name='human'>Yes
-        <span ng-if='DogName.human==="Yes"?true:false'>Something should show up here.</span>
+        <section ng-if='DogName.human==="Yes"?true:false'>
+          <input type="radio" value='Adult' ng-model='DogName.hc' name='hc'>Adult
+          <input type="radio" value='Child' ng-model='DogName.hc' name='hc'>Child
+          <select ng-model='DogName.HiStatus'>
+            <option>Leaving minor burising, scratch but no broken skin</option>
+            <option>Breaking skin, np permanent scarring</option>
+            <option>Requiring medical attention and/or stitches</option>
+            <option>More than once</option>
+          </select>
+        </section>
       </li>
     </ul>
     <input type="button" value='Finished' ng-click='HomeInfo(DogName)'>
