@@ -10,6 +10,10 @@ angular
 
     */
     $scope.something = function(DogName){
+      if(DogName.injure === 'No'){
+        remove(DogName.ik);
+        remove(DogName.number);
+      }
       console.log(DogName);
     }
     $scope.Name = function(DogName){
