@@ -8,9 +8,10 @@
       <li>How OLD is {{DogName.name | uppercase}}
         <input type="number" min='0' max='20' ng-model='DogName.age' required>
       </li>
-      <li>Is {{DogName.name | uppercase}} 
+      <li>Is {{DogName.name | uppercase}}
         <input type="radio" ng-model='DogName.gender' value='Male' name='gender'>Male
         <input type="radio" ng-model='DogName.gender' value='Female' name='gender'>Female
+        <span ng-if='DogName.gender==="Female"?true:false'>Show this shit so it can work</span>
       </li>
       <li>What BREED is {{DogName.name | uppercase}}
         <select ng-model='DogName.breed' name='breed'>
