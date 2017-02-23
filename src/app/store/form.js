@@ -11,8 +11,8 @@ angular
     */
     $scope.something = function(DogName){
       if(DogName.injure === 'No'){
-        remove(DogName.ik);
-        remove(DogName.number);
+        DogName.number = '';
+        DogName.ik = '';
       }
       console.log(DogName);
     }
@@ -44,6 +44,10 @@ angular
     }
 
     $scope.HomeInfo = function(DogName){
+      if(DogName.injure === 'No'){
+        delete(DogName.number);
+        delete(DogName.ik);
+      }
       console.log(DogName);
     }
 

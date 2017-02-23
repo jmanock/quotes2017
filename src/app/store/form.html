@@ -1,4 +1,4 @@
-<!-- <form action="" name='DogForm'>
+<form action="" name='DogForm'>
   <section ng-hide='name'>What is the name of your Dog?
     <input type="text" ng-model='DogName.name' required name='dname' autofocus>
     <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
@@ -118,20 +118,20 @@
         <input type="radio" value='Yes' ng-model='DogName.abuse' name='abuse'>Yes
       </li>
       <li>Has {{DogName.name | uppercase}} injured or killed another animal?
-        <input type="radio" value='No' ng-model='DogName.killed' name='killed'>No
-        <input type="radio" value='Yes' ng-model='DogName.killed' name='killed'>Yes
-        <span ng-if='DogName.killed==="Yes"?true:false'>
-          <input type="radio" value='Injured' ng-model='DogName.killed.status' name='injuered'>Injured
-          <input type="radio" value='Killed' name='injuered' ng-model='DogName.killed.status'>Killed
-        </span>
-        <span ng-if='DogName.killed.status==="Injured"?true:false'>
-          <input type="radio" value='One' ng-model='DogName.killed.status.number' name='injuredInjured'>Injured ONE animal
-          <input type="raido" value='More' ng-model='DogName.killed.status.number' name='injuredInjured'>Injured MORE than One animal
-        </span>
-        <span ng-if='DogName.killed.status==="Killed"?true:false'>
-          <input type="raido" value='One' ng-model='DogName.killed.status.number' name='killedKilled'>Killed ONE animal
-          <input type="raido" value='More' ng-model='DogName.killed.status.number' name='killedKilled'>Killed MORE than ONE animal
-        </span>
+      <input type="radio" value='No' ng-model='DogName.injure' name='injure'>No
+      <input type="radio" value='Yes' ng-model='DogName.injure' name='injure'>Yes
+      <section ng-if='DogName.injure==="Yes"?true:false'>
+        <input type="radio" value='Injure' ng-model='DogName.ik' name='status' >Injure
+        <input type="radio" value='Killed' ng-model='DogName.ik' name='status'>killed
+        <p ng-if='DogName.ik==="Injure"?true:false'>
+          <input type="radio" value='One' ng-model='DogName.number' name='number'>One
+          <input type="radio" value='More' ng-model='DogName.number' name='number'>More than One
+        </p>
+        <p ng-if='DogName.ik==="Killed"?true:false'>
+          <input type="radio" value='One' ng-model='DogName.number' name='number'>One
+          <input type="radio" value='More' ng-model='DogName.number' name='number'>More than One
+        </p>
+      </section>
       </li>
       <li>Has Animal Control been called?
         <input type="radio" value='No' ng-model='DogName.control' name='control'>No
@@ -145,20 +145,4 @@
     </ul>
     <input type="button" value='Finished' ng-click='HomeInfo(DogName)'>
   </section>
-</form> -->
-
-<input type="radio" value='No' ng-model='DogName.injure' name='injure'>No
-<input type="radio" value='Yes' ng-model='DogName.injure' name='injure'>Yes
-<section ng-if='DogName.injure==="Yes"?true:false'>
-  <input type="radio" value='Injure' ng-model='DogName.ik' name='status'>Injure
-  <input type="radio" value='Killed' ng-model='DogName.ik' name='status'>killed
-  <p ng-if='DogName.ik==="Injure"?true:false'>
-    <input type="radio" value='One' ng-model='DogName.number' name='number'>One
-    <input type="radio" value='More' ng-model='DogName.number' name='number'>More than One
-  </p>
-  <p ng-if='DogName.ik==="Killed"?true:false'>
-    <input type="radio" value='One' ng-model='DogName.number' name='number'>One
-    <input type="radio" value='More' ng-model='DogName.number' name='number'>More than One
-  </p>
-</section>
-<input type="button" value='FindOut' ng-click='something(DogName)'>
+</form>
