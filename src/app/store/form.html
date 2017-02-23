@@ -45,6 +45,7 @@
       <li>Is {{DogName.name | uppercase}} integral or involved in your work?
         <input type="radio" value='Yes' ng-model='DogName.work' name='work'>Yes
         <input type="radio" value='No' ng-model='DogName.work' name='work'>No
+        <span ng-if='DogName.work === "Yes"?true:false'>This should show up also.</span>
       </li>
       <li>Is {{DogName.name | uppercase}} a FOSTER dog?
         <input type="radio" value='Yes' ng-model='DogName.foster' name='foster'>Yes
@@ -109,13 +110,14 @@
         <input type="radio" value='2to4' ng-model='DogName.home' name='home'>2 to 4
         <input type="radio" value='5orMore' ng-model='DogName.home' name='home'>5 or More
       </li>
-      <li>Hav any permanent residents been convicted of animal or domestic abuse in the last 5 years?
+      <li>Havs any permanent residents been convicted of animal or domestic abuse in the last 5 years?
         <input type="radio" value='No' ng-model='DogName.abuse' name='abuse'>No
         <input type="radio" value='Yes' ng-model='DogName.abuse' name='abuse'>Yes
       </li>
       <li>Has {{DogName.name | uppercase}} injured or killed another animal?
         <input type="radio" value='No' ng-model='DogName.killed' name='killed'>No
         <input type="radio" value='Yes' ng-model='DogName.killed' name='killed'>Yes
+        <span ng-if='DogName.killed==="Yes"?true:false'>Something should also go here!</span>
       </li>
       <li>Has Animal Control been called?
         <input type="radio" value='No' ng-model='DogName.control' name='control'>No
@@ -124,6 +126,7 @@
       <li>Human Injury?
         <input type="radio" value='No' ng-model='DogName.human' name='human'>No
         <input type="radio" value='Yes' ng-model='DogName.human' name='human'>Yes
+        <span ng-if='DogName.human==="Yes"?true:false'>Something should show up here.</span>
       </li>
     </ul>
     <input type="button" value='Finished' ng-click='HomeInfo(DogName)'>
