@@ -11,18 +11,18 @@
   <section ng-show='dogInfo'>
     <ul>
       <li>How OLD is {{DogName.name | uppercase}}
-        <input type="number" min='0' max='20' ng-model='DogName.age' required>
+        <input type="number" min='0' max='20' ng-model='DogName.age' name='age' required>
       </li>
       <li>What BREED is {{DogName.name | uppercase}}
-        <select ng-model='DogName.breed' name='breed'>
+        <select ng-model='DogName.breed' name='breed' required>
           <option ng-repeat='b in breeds'>{{b.name}}</option>
         </select>
       </li>
       <li>How much does {{DogName.name | uppercase}} WEIGHT?
-        <input type="number" min='0' ng-model='DogName.weight'>
+        <input type="number" min='0' ng-model='DogName.weight' name='weight' required>
       </li>
       <li>Where does {{DogName.name | uppercase}} go to the BATHROOM?
-        <select ng-model='DogName.bathroom'>
+        <select ng-model='DogName.bathroom' name='bathroom' required>
           <option>Inside completely enclosed fenced area</option>
           <option>Underground electric dog containment system</option>
           <option>Outside loose in unfenced yard</option>
@@ -33,7 +33,7 @@
         </select>
       </li>
       <li>Where does {{DogName.name | uppercase}} SLEEP?
-        <select ng-model='DogName.sleep'>
+        <select ng-model='DogName.sleep' name='sleep' required>
           <option>Inside Home</option>
           <option>Garage</option>
           <option>Outside loose in fenced yard</option>
@@ -43,23 +43,22 @@
         </select>
       </li>
       <li>Is {{DogName.name | uppercase}} integral or involved in your work?
-        <input type="radio" value='Yes' ng-model='DogName.work' name='work'>Yes
-        <input type="radio" value='No' ng-model='DogName.work' name='work'>No <br>
+        <input type="radio" value='Yes' ng-model='DogName.work' name='work' required>Yes
+        <input type="radio" value='No' ng-model='DogName.work' name='work' required>No <br>
         <span ng-if='DogName.work === "Yes"?true:false'>What is your job?
           <input type="text" ng-model='DogName.job'>
         </span>
-
       </li>
       <li>Is {{DogName.name | uppercase}} a FOSTER dog?
-        <input type="radio" value='Yes' ng-model='DogName.foster' name='foster'>Yes
-        <input type="radio" value='No' ng-model='DogName.foster' name='foster'>No
+        <input type="radio" value='Yes' ng-model='DogName.foster' name='foster' required>Yes
+        <input type="radio" value='No' ng-model='DogName.foster' name='foster' required>No
       </li>
       <li>Is {{DogName.name | uppercase}} {{DogName.genderInfo}}?
-        <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed'>Yes
-        <input type="radio" value='No' ng-model='DogName.fixed' name='fixed'>No
+        <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed' required>Yes
+        <input type="radio" value='No' ng-model='DogName.fixed' name='fixed' required>No
       </li>
     </ul>
-    <input type="button" value='Next' ng-click='DogInfo(DogName)'>
+    <input type="button" value='Next' ng-click='DogInfo(DogName)' ng-disabled='DogForm.age.$invalid || DogForm.breed.$invalid || DogForm.bathroom.$invalid || DogForm.sleep.$invalid || DogForm.work.$invalid || DogForm.foster.$invalid || DogForm.fixed.$invalid'>
   </section>
   <section ng-show='personalInfo'>
     <ul>

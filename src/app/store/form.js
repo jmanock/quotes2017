@@ -9,7 +9,7 @@ angular
     /*
 
     */
-    
+
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
@@ -26,8 +26,12 @@ angular
     }
 
     $scope.DogInfo = function(DogName){
-      $scope.dogInfo = false;
-      $scope.personalInfo = true;
+      if(DogName.age === '' || DogName.weight === '' || DogName.bathroom === '' || DogName.sleep === '' || DogName.work === '' || DogName.foster === '' || DogName.fixed === ''){
+        console.log('Please answer all questions');
+      }else{
+        $scope.dogInfo = false;
+        $scope.personalInfo = true;
+      }
       console.log(DogName);
     }
 
