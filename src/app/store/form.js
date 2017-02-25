@@ -9,34 +9,7 @@ angular
     /*
 
     */
-    $scope.something = function(DogName){
-      console.log(DogName);
-      if(DogName.human === 'No'){
-        DogName.HiStatus = '';
-        DogName.changes = '';
-        DogName.discribe = '';
-        DogName.restrictions = '';
-        DogName.hc = '';
-      }
-      if(DogName.human === 'Yes'){
-        // This should check to make sure nothing is empty
-        if(DogName.HiStatus === ''){
-          console.log('Please fill out `HiStatus` question');
-        }
-        if(DogName.changes === ''){
-          console.log('Please fill out `changes` question');
-        }
-        if(DogName.discribe === ''){
-          console.log('Please fill out `discribe` question');
-        }
-        if(DogName.restrictions === ''){
-          console.log('Please fill out `restriction` question');
-        }
-        if(DogName.hc === ''){
-          console.log('Please fill out `hc` question');
-        }
-      }
-    }
+    
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
