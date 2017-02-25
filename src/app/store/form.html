@@ -171,12 +171,9 @@
         <option>Requiring medical attention and/or stitches</option>
         <option>More than once</option>
       </select><br>
-      <label>Please describe each even in detail:</label><br>
-      <textarea name="discribe" id="" cols="30" rows="10" ng-model='DogName.discribe'></textarea><br>
-      <label>What fines, restrictions, specific requirements were mandated as a result of each event?</label><br>
-      <textarea name="restrictions" id="" cols="30" rows="10" ng-model='DogName.restrictions'></textarea><br>
-      <label>What changes have you made to prevent similar events?</label><br>
-      <textarea name="changes" id="" cols="30" rows="10" ng-model='DogName.changes'></textarea><br>
+      <textarea name="discribe" id="" cols="60" rows="10" placeholder='Please describe each event in detail:' ng-model='DogName.discribe'></textarea><br>
+      <textarea name="restrictions" id="" cols="60" rows="10" placeholder='What fines, restrictions, specific requirements were mandated as a result of each event?' ng-model='DogName.restrictions'></textarea><br>
+      <textarea name="changes" id="" cols="60" rows="10" placeholder='What changes have you made to prevent similar events?' ng-model='DogName.changes'></textarea><br>
     </section>
     <input type="button" value='test' ng-click='something(DogName)' ng-disabled='DogForm.human.$invalid'>
 </form>
