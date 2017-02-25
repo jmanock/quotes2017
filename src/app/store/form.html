@@ -4,9 +4,9 @@
     <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
   </section>
   <section ng-show='gender'>Is {{DogName.name | uppercase}}
-    <input type="radio" value='Female' ng-model='DogName.gender' name='gender'>Female
-    <input type="radio" value='Male' ng-model='DogName.gender' name='gender'>Male
-    <input type="button" value='Next' ng-click='Gender(DogName)'>
+    <input type="radio" value='Female' ng-model='DogName.gender' name='gender' required>Female
+    <input type="radio" value='Male' ng-model='DogName.gender' name='gender' required>Male
+    <input type="button" value='Next' ng-click='Gender(DogName)' ng-disabled='DogForm.gender.$invalid'>
   </section>
   <section ng-show='dogInfo'>
     <ul>

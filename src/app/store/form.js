@@ -9,13 +9,7 @@ angular
     /*
 
     */
-    $scope.something = function(DogName){
-      if(DogName.human === 'No'){
-        delete(DogName.hc);
-        delete(DogName.HiStatus);
-      }
-      console.log(DogName);
-    }
+    
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
