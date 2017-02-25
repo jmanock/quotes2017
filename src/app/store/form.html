@@ -1,5 +1,5 @@
 <form action="" name='DogForm'>
-  <!-- <section ng-hide='name'>What is the name of your Dog?
+  <section ng-hide='name'>What is the name of your Dog?
     <input type="text" ng-model='DogName.name' required name='dname' autofocus>
     <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
   </section>
@@ -18,7 +18,7 @@
           <option ng-repeat='b in breeds'>{{b.name}}</option>
         </select>
       </li>
-      <li>How much does {{DogName.name | uppercase}} WEIGHT?
+      <li>How many POUNDS {{DogName.name | uppercase}}?
         <input type="number" min='0' ng-model='DogName.weight' name='weight' required>
       </li>
       <li>Where does {{DogName.name | uppercase}} go to the BATHROOM?
@@ -46,7 +46,7 @@
         <input type="radio" value='Yes' ng-model='DogName.work' name='work' required>Yes
         <input type="radio" value='No' ng-model='DogName.work' name='work' required>No <br>
         <span ng-if='DogName.work === "Yes"?true:false'>What is your job?
-          <input type="text" ng-model='DogName.job'>
+          <input type="text" ng-model='DogName.job' name='job' required>
         </span>
       </li>
       <li>Is {{DogName.name | uppercase}} a FOSTER dog?
@@ -58,7 +58,7 @@
         <input type="radio" value='No' ng-model='DogName.fixed' name='fixed' required>No
       </li>
     </ul>
-    <input type="button" value='Next' ng-click='DogInfo(DogName)' ng-disabled='DogForm.age.$invalid || DogForm.breed.$invalid || DogForm.bathroom.$invalid || DogForm.sleep.$invalid || DogForm.work.$invalid || DogForm.foster.$invalid || DogForm.fixed.$invalid'>
+    <input type="button" value='Next' ng-click='DogInfo(DogName)' ng-disabled='DogForm.age.$invalid || DogForm.breed.$invalid || DogForm.bathroom.$invalid || DogForm.sleep.$invalid || DogForm.work.$invalid || DogForm.foster.$invalid || DogForm.fixed.$invalid || DogForm.job.$invalid'>
   </section>
   <section ng-show='personalInfo'>
     <ul>
@@ -139,41 +139,22 @@
       <li>Human Injury?
         <input type="radio" value='No' ng-model='DogName.human' name='human' required>No
         <input type="radio" value='Yes' ng-model='DogName.human' name='human' required>Yes
+
         <section ng-if='DogName.human==="Yes"?true:false'>
-          <input type="radio" value='Adult' ng-model='DogName.hc' name='hc'>Adult
-          <input type="radio" value='Child' ng-model='DogName.hc' name='hc'>Child
-          <select ng-model='DogName.HiStatus'>
+          <input type="radio" value='Adult' ng-model='DogName.hc' name='hc' required>Adult
+          <input type="radio" value='Child' ng-model='DogName.hc' name='hc' required>Child
+          <select ng-model='DogName.HiStatus' name='HiStatus' required>
             <option>Leaving minor burising, scratch but no broken skin</option>
-            <option>Breaking skin, np permanent scarring</option>
+            <option>Breaking skin, no permanent scarring</option>
             <option>Requiring medical attention and/or stitches</option>
             <option>More than once</option>
           </select><br>
-          Please describe each even in detail:
-          <textarea name="discribe" id="" cols="30" rows="10" ></textarea>
-          What fines, restrictions, specific requirements were mandated as a result of each event?
-          <textarea name="restrictions" id="" cols="30" rows="10"></textarea>
-          What changes have you made to prevent similar events?
-          <textarea name="changes" id="" cols="30" rows="10"></textarea>
+          <textarea name="discribe" id="" cols="60" rows="10" placeholder='Please describe each event in detail:' ng-model='DogName.discribe' required></textarea><br>
+          <textarea name="restrictions" id="" cols="60" rows="10" placeholder='What fines, restrictions, specific requirements were mandated as a result of each event?' ng-model='DogName.restrictions' required></textarea><br>
+          <textarea name="changes" id="" cols="60" rows="10" placeholder='What changes have you made to prevent similar events?' ng-model='DogName.changes' required></textarea><br>
         </section>
       </li>
     </ul>
-    <input type="button" value='Finished' ng-click='HomeInfo(DogName)' ng-disabled='DogForm.children.$invalid || DogForm.home.$invalid || DogForm.abuse.$invalid || DogForm.control.$invalid || DogForm.human.$invalid'>
-  </section> -->
-  <li>Human Injury?
-    <input type="radio" value='No' ng-model='DogName.human' name='human' required>No
-    <input type="radio" value='Yes' ng-model='DogName.human' name='human' required>Yes
-    <section ng-if='DogName.human==="Yes"?true:false'>
-      <input type="radio" value='Adult' ng-model='DogName.hc' name='hc'>Adult
-      <input type="radio" value='Child' ng-model='DogName.hc' name='hc'>Child
-      <select ng-model='DogName.HiStatus'>
-        <option>Leaving minor burising, scratch but no broken skin</option>
-        <option>Breaking skin, np permanent scarring</option>
-        <option>Requiring medical attention and/or stitches</option>
-        <option>More than once</option>
-      </select><br>
-      <textarea name="discribe" id="" cols="60" rows="10" placeholder='Please describe each event in detail:' ng-model='DogName.discribe'></textarea><br>
-      <textarea name="restrictions" id="" cols="60" rows="10" placeholder='What fines, restrictions, specific requirements were mandated as a result of each event?' ng-model='DogName.restrictions'></textarea><br>
-      <textarea name="changes" id="" cols="60" rows="10" placeholder='What changes have you made to prevent similar events?' ng-model='DogName.changes'></textarea><br>
-    </section>
-    <input type="button" value='test' ng-click='something(DogName)' ng-disabled='DogForm.human.$invalid'>
+    <input type="button" value='Finished' ng-click='HomeInfo(DogName)' ng-disabled='DogForm.children.$invalid || DogForm.home.$invalid || DogForm.abuse.$invalid || DogForm.control.$invalid || DogForm.human.$invalid || DogForm.HiStatus.$invalid || DogForm.changes.$invalid || DogForm.discribe.$invalid || DogForm.restriction.$invalid || DogForm.hc.$invalid'>
+  </section>
 </form>
