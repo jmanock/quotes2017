@@ -9,7 +9,17 @@ angular
     /*
 
     */
-
+    $scope.something = function(DogName){
+      console.log(DogName);
+      if(DogName.human === 'No'){
+        DogName.HiStatus = '';
+        DogName.changes = '';
+        DogName.discribe = '';
+        DogName.hs = '';
+        DogName.restrictions = '';
+        DogName.hc = '';
+      }
+    }
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
