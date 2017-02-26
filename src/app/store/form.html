@@ -1,6 +1,7 @@
 <form action="" name='DogForm'>
-  <section ng-hide='name'>What is the name of your Dog?
-    <input type="text" ng-model='DogName.name' required name='dname' autofocus>
+  <div class="background-image"></div>
+  <section ng-hide='name'>
+    <input type="text" ng-model='DogName.name' required name='dname' autofocus placeholder="Your Dog's Name" >
     <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
   </section>
   <section ng-show='gender'>Is {{DogName.name | uppercase}}
