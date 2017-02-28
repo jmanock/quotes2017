@@ -195,18 +195,18 @@ input[type=button]{
 .dogInfo input, .dogInfo select, .dogInfo textarea, .dogInfo label{
   font-size:15px;
   margin-bottom:2px;
-  font-family:Arial, sans-serif;
+  font-weight:bold;
 }
-.dogInfo select, .dogInfo textarea{
+.dogInfo input[type=number],.dogInfo select, .dogInfo textarea{
   width:100%;
-  background:#fff;
+  background:lightgray;
   border:0;
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
   border-radius:4px;
 }
 input[type=radio]{
-  color:red;
+
 }
 /*li:nth-child(even){
   border:1px solid red;
