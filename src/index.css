@@ -142,11 +142,10 @@ p{
   left:0;
 }
 section{
-  /*border:3px solid red;*/
   margin-left:40%;
   margin-top:15%;
 }
-input{
+.name input{
   font-family:Georgia,'Times New Roman', Times, serif;
   background:rgba(255,255,255,.1);
   border:none;
@@ -157,9 +156,7 @@ input{
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
-  /*background-color:#e8eeef;*/
   background-color:#385076;
-
   color:#8a97a0;
   -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.03) inset;
   box-shadow:0 1px 0 rgba(0,0,0,0.03) inset;
@@ -168,10 +165,15 @@ input{
 input[type=button]{
   background-color:#339999;
   color:white;
-}
-select{
-  background-color:#385976;
-  color:gray;
+  font-family:Georgia,'Times New Roman',Times, serif;
+  border:none;
+  font-size:16px;
+  margin:0;
+  outline:0;
+  padding:7px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
 }
 .dogInfo{
   margin-left:20%;
@@ -190,3 +192,25 @@ select{
 .dogInfo ul{
   list-style-type:none;
 }
+.dogInfo input, .dogInfo select, .dogInfo textarea, .dogInfo label{
+  font-size:15px;
+  margin-bottom:2px;
+  font-family:Arial, sans-serif;
+}
+.dogInfo select, .dogInfo textarea{
+  width:100%;
+  background:#fff;
+  border:0;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+}
+input[type=radio]{
+  color:red;
+}
+/*li:nth-child(even){
+  border:1px solid red;
+}
+li:nth-child(odd){
+  border:1px solid blue;
+}*/

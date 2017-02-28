@@ -1,7 +1,7 @@
 <form action="" name='DogForm'>
   <div class="background-image"></div>
-  <section ng-hide='name'>
-    <input type="text" ng-model='DogName.name' required name='dname' autofocus placeholder="Your Dog's Name" >
+  <section ng-hide='name' class='name'>
+    <input type="text" ng-model='DogName.name' required name='dname' autofocus placeholder="Your Dog's Name" class='dname'>
     <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
   </section>
   <section ng-show='gender' class='gender'>Is {{DogName.name | uppercase}}
@@ -50,12 +50,12 @@
           <input type="text" ng-model='DogName.job' name='job' required>
         </span>
       </li>
-      <li>Is {{DogName.name | uppercase}} a FOSTER dog?
+      <li>Is {{DogName.name | uppercase}} a FOSTER dog? 
         <input type="radio" value='Yes' ng-model='DogName.foster' name='foster' required>Yes
         <input type="radio" value='No' ng-model='DogName.foster' name='foster' required>No
       </li>
       <li>Is {{DogName.name | uppercase}} {{DogName.genderInfo}}?
-        <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed' required>Yes
+        <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed' required >Yes
         <input type="radio" value='No' ng-model='DogName.fixed' name='fixed' required>No
       </li>
     </ul>
