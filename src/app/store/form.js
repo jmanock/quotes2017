@@ -9,7 +9,7 @@ angular
     /*
 
     */
-    
+
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
@@ -50,7 +50,8 @@ angular
         delete(DogName.hc);
         delete(DogName.HiStatus);
       }
-      console.log(DogName);
+      $scope.homeInfo = false;
+      $scope.overview = true;
     }
 
     $scope.states = [

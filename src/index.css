@@ -119,8 +119,9 @@ body{
   /*background-color:#385076;*/
   /*background-color:#e8eeef;*/
   background-color:lightgray;
+
 }
-p{
+h1{
   text-align:center;
   background-color:#339999;
 }
@@ -141,12 +142,11 @@ p{
   top:0;
   left:0;
 }
-section{
+.name, .gender{
   margin-left:40%;
   margin-top:15%;
 }
 .name input{
-  font-family:Georgia,'Times New Roman', Times, serif;
   background:rgba(255,255,255,.1);
   border:none;
   font-size:16px;
@@ -165,7 +165,6 @@ section{
 input[type=button]{
   background-color:#339999;
   color:white;
-  font-family:Georgia,'Times New Roman',Times, serif;
   border:none;
   font-size:16px;
   margin:0;
@@ -175,29 +174,27 @@ input[type=button]{
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
 }
-.dogInfo{
+.dogInfo, .personalInfo, .homeInfo, .overview{
   margin-left:20%;
   margin-top:5%;
   margin-right:20%;
   background:rgba(255,255,255,0.35);
   border-radius:3px;
   box-shadow:0 1px 5px rgba(0,0,0,.25);
-  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
   position:fixed;
   right:0;
   left:0;
   z-index:2;
   padding:0 10px;
 }
-.dogInfo ul{
+.dogInfo ul, .personalInfo ul, .homeInfo ul, .overview ul{
   list-style-type:none;
 }
-.dogInfo input, .dogInfo select, .dogInfo textarea, .dogInfo label{
+.dogInfo input, .dogInfo select, .dogInfo textarea, .dogInfo label, .personalInfo input, .personalInfo select, .personalInfo textarea, .personalInfo label, .homeInfo input, .homeInfo select, .homeInfo textarea, .homeInfo label{
   font-size:15px;
   margin-bottom:2px;
-  font-weight:bold;
 }
-.dogInfo input[type=number],.dogInfo select, .dogInfo textarea{
+.dogInfo input[type=number],.dogInfo select, .dogInfo textarea, .personalInfo input[type=email], .personalInfo select, .personalInfo textarea, .homeInfo select, .homeInfo textarea{
   width:100%;
   background:lightgray;
   border:0;
@@ -214,3 +211,6 @@ input[type=radio]{
 li:nth-child(odd){
   border:1px solid blue;
 }*/
+ .overview{
+
+}

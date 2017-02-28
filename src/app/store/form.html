@@ -12,7 +12,7 @@
   <section ng-show='dogInfo' class='dogInfo'>
     <ul>
       <li>How OLD is {{DogName.name | uppercase}}
-        <input type="number" min='0' max='20' ng-model='DogName.age' name='age' required>
+        <input type="number" min='0' max='20' ng-model='DogName.age' name='age' required autofocus>
       </li>
       <li>What BREED is {{DogName.name | uppercase}}
         <select ng-model='DogName.breed' name='breed' required>
@@ -61,7 +61,7 @@
     </ul>
     <input type="button" value='Next' ng-click='DogInfo(DogName)' ng-disabled='DogForm.age.$invalid || DogForm.breed.$invalid || DogForm.bathroom.$invalid || DogForm.sleep.$invalid || DogForm.work.$invalid || DogForm.foster.$invalid || DogForm.fixed.$invalid || DogForm.job.$invalid'>
   </section>
-  <section ng-show='personalInfo'>
+  <section ng-show='personalInfo' class='personalInfo'>
     <ul>
       <li>What is your EMAIL
         <input type="email" ng-model='DogName.email' name='email' required>
@@ -69,6 +69,17 @@
       <li>What STATE does {{DogName.name | uppercase}} live in?
         <select ng-model='DogName.state' name='state' required>
           <option ng-repeat='s in states'>{{s.name}}</option>
+        </select>
+      </li>
+      <li>what type of TRANNING does {{DogName.name | uppercase}} have?
+        <select ng-model='DogName.tranning' name='tranning' required>
+          <option>None or Basic</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+          <option>Therapy Dog</option>
+          <option>Hunting, Gun, Sporting off Leash, Farm, Herding</option>
+          <option>Sled dog racing, Musing for hire, Freighting</option>
+          <option>War or Police Service dog, Professionally trained Personal Protection or Professional Trained Guard Dog</option>
         </select>
       </li>
       <li>What type of AREA do you live in?
@@ -84,21 +95,10 @@
         <input type="radio" ng-model='DogName.compliance' value='Yes' name='compliance' required>Yes
         <input type="radio" ng-model='DogName.compliance' value='No' name='compliance' required>No
       </li>
-      <li>what type of TRANNING does {{DogName.name | uppercase}} have?
-        <select ng-model='DogName.tranning' name='tranning' required>
-          <option>None or Basic</option>
-          <option>Intermediate</option>
-          <option>Advanced</option>
-          <option>Therapy Dog</option>
-          <option>Hunting, Gun, Sporting off Leash, Farm, Herding</option>
-          <option>Sled dog racing, Musing for hire, Freighting</option>
-          <option>War or Police Service dog, Professionally trained Personal Protection or Professional Trained Guard Dog</option>
-        </select>
-      </li>
     </ul>
     <input type="button" value='Next' ng-click='PersonalInfo(DogName)' ng-disabled='DogForm.email.$invalid || DogForm.state.$invalid || DogForm.area.$invalid || DogForm.vet.$invalid || DogForm.compliance.$invalid || DogForm.traning.$invalid'>
   </section>
-  <section ng-show='homeInfo'>
+  <section ng-show='homeInfo' class='homeInfo'>
     <ul>
       <li>Are there any children in the home?
         <select ng-model='DogName.children' name='children' required>
@@ -120,7 +120,7 @@
       <li>Has {{DogName.name | uppercase}} injured or killed another animal?
       <input type="radio" value='No' ng-model='DogName.injure' name='injure' require>No
       <input type="radio" value='Yes' ng-model='DogName.injure' name='injure' require>Yes
-      <section ng-if='DogName.injure==="Yes"?true:false'>
+      <section ng-if='DogName.injure==="Yes"?true:false' class='yesInjure'>
         <input type="radio" value='Injure' ng-model='DogName.ik' name='status' >Injure
         <input type="radio" value='Killed' ng-model='DogName.ik' name='status'>killed
         <p ng-if='DogName.ik==="Injure"?true:false'>
@@ -158,39 +158,31 @@
     </ul>
     <input type="button" value='Finished' ng-click='HomeInfo(DogName)' ng-disabled='DogForm.children.$invalid || DogForm.home.$invalid || DogForm.abuse.$invalid || DogForm.control.$invalid || DogForm.human.$invalid || DogForm.HiStatus.$invalid || DogForm.changes.$invalid || DogForm.discribe.$invalid || DogForm.restriction.$invalid || DogForm.hc.$invalid'>
   </section>
-
-  <!-- <section>
-    <label for="email">What is your EMAIL?</label>
-    <input type="email" ng-model='DogName.email' name='email' required><br>
-
-    <label for="states">What STATE does {{DogName.name | uppercase}} live in?</label>
-    <select ng-model='DogName.state' name='state' required>
-      <option ng-repeat='s in states'>{{s.name}}</option>
-    </select><br>
-
-    <label for="area">What AREA does {{DogName.name | uppercase}} live in?</label>
-    <input type="radio" name='area' ng-model='DogName.area' value='Country' required>Countryl and/or {{DogName.name | uppercase}} travels with you
-    <input type="radio" name='area' ng-model='DogName.area' value='City' required>City, Town, Suburb, Campus <br>
-
-    <label for="vet">Vet Visits </label>
-    <input type="radio" ng-model='DogName.vet' value='annually' name='vet' required>Annually
-    <input type="radio" ng-model='DogName.vet' value='illness' name='vet' required>Annually and would treat for illness or injury
-    <input type="radio" ng-model='DogName.vet' value='never' name='vet' required>Never <br>
-
-    <label for="compliance">Compliance with Local Laws</label>
-    <input type="radio" ng-model='DogName.compliance' value='Yes' name='compliance' required>Yes
-    <input type="radio" ng-model='DogName.compliance' value='No' name='compliance' required>No <br>
-
-    <label for="tranning">what type of TRANNING does {{DogName.name | uppercase}} have?</label>
-    <select ng-model='DogName.tranning' name='tranning' required>
-      <option>None or Basic</option>
-      <option>Intermediate</option>
-      <option>Advanced</option>
-      <option>Therapy Dog</option>
-      <option>Hunting, Gun, Sporting off Leash, Farm, Herding</option>
-      <option>Sled dog racing, Musing for hire, Freighting</option>
-      <option>War or Police Service dog, Professionally trained Personal Protection or Professional Trained Guard Dog</option>
-    </select> <br>
-    <input type="button" value='Next' ng-click='PersonalInfo(DogName)' ng-disabled='DogForm.email.$invalid || DogForm.state.$invalid || DogForm.area.$invalid || DogForm.vet.$invalid || DogForm.compliance.$invalid || DogForm.traning.$invalid'>
-  </section> -->
+  <section ng-show='overview' class='overview'>
+    <p>{{DogName.name | uppercase}} wants to THANK YOU!</p>
+    <ul>
+      <li>Name: {{DogName.name}}</li>
+      <li>Abuse:{{DogName.abuse}}</li>
+      <li>Age: {{DogName.age}}</li>
+      <li>Area: {{DogName.area}}</li>
+      <li>Bathroom: {{DogName.bathroom}}</li>
+      <li>Breed: {{DogName.breed}}</li>
+      <li>Children: {{DogName.children}}</li>
+      <li>Compliance: {{DogName.compliance}}</li>
+      <li>Controll: {{DogName.control}}</li>
+      <li>Email: {{DogName.email}}</li>
+      <li>Fixed: {{DogName.fixed}}</li>
+      <li>Foster: {{DogName.foster}}</li>
+      <li> Gender: {{DogName.gender}}</li>
+      <li>Home: {{DogName.home}}</li>
+      <li>Human: {{DogName.human}}</li>
+      <li>Injure: {{DogName.injure}}</li>
+      <li>Sleep: {{DogName.sleep}}</li>
+      <li>State: {{DogName.state}}</li>
+      <li>Tranning: {{DogName.tranning}}</li>
+      <li>Vet: {{DogName.vet}}</li>
+      <li>Weight: {{DogName.weight}}</li>
+      <li>Work: {{DogName.work}}</li>
+    </ul>
+  </section>
 </form>
