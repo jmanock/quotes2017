@@ -173,6 +173,11 @@ select{
   background-color:#385976;
   color:gray;
 }
+.dogInfo{
+  border:1px solid red;
+  margin:0;
+  background-color:blue;
+}
 .dogInfo ul{
   list-style-type:none;
 }
