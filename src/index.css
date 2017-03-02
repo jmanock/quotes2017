@@ -163,6 +163,7 @@ h1{
   margin-bottom:30px;
 }
 input[type=button]{
+  cursor:pointer;
   background-color:#339999;
   color:white;
   border:none;
@@ -213,4 +214,7 @@ li:nth-child(odd){
 }*/
  .overview{
 
+}
+button{
+  
 }
