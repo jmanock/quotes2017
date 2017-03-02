@@ -215,6 +215,7 @@ li:nth-child(odd){
  .overview{
 
 }
-button{
-  
+.fa{
+  color:#385076;
+  cursor:pointer;
 }
