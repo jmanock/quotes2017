@@ -195,28 +195,7 @@
   <section ng-show='overview' class='overview'>
     <p>{{DogName.name | uppercase}} wants to THANK YOU!</p>
     <ul>
-      <li>Name: {{DogName.name}}</li>
-      <li>Abuse:{{DogName.abuse}}</li>
-      <li>Age: {{DogName.age}}</li>
-      <li>Area: {{DogName.area}}</li>
-      <li>Bathroom: {{DogName.bathroom}}</li>
-      <li>Breed: {{DogName.breed}}</li>
-      <li>Children: {{DogName.children}}</li>
-      <li>Compliance: {{DogName.compliance}}</li>
-      <li>Controll: {{DogName.control}}</li>
-      <li>Email: {{DogName.email}}</li>
-      <li>Fixed: {{DogName.fixed}}</li>
-      <li>Foster: {{DogName.foster}}</li>
-      <li> Gender: {{DogName.gender}}</li>
-      <li>Home: {{DogName.home}}</li>
-      <li>Human: {{DogName.human}}</li>
-      <li>Injure: {{DogName.injure}}</li>
-      <li>Sleep: {{DogName.sleep}}</li>
-      <li>State: {{DogName.state}}</li>
-      <li>Tranning: {{DogName.tranning}}</li>
-      <li>Vet: {{DogName.vet}}</li>
-      <li>Weight: {{DogName.weight}}</li>
-      <li>Work: {{DogName.work}}</li>
+      <li ng-repeat='n in DogName'>{{n}}</li>
     </ul>
   </section>
 </form>

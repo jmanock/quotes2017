@@ -53,6 +53,7 @@ angular
       $scope.homeInfo = false;
       $scope.overview = true;
     }
+    // Should load all dog info into an array
 
     $scope.states = [
       {name:'Alabama'},
