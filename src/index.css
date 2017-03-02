@@ -8,6 +8,7 @@ body{
   /*background-color:#385076;*/
   /*background-color:#e8eeef;*/
   background-color:lightgray;
+  color:#333333;
 }
 h1{
   text-align:center;
@@ -93,7 +94,11 @@ input[type=button]{
   -webkit-border-radius:4px;
   border-radius:4px;
 }
-.dogInfoRadio{
+label{
+  color:#1a1a1a;
+  font-weight:bold;
+}
+.dogInfoRadio label{
 
 }
 .personalInfoRadio{
