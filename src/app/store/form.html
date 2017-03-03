@@ -14,7 +14,7 @@
   <section ng-show='dogInfo' class='dogInfo'>
     <ul>
       <li>How OLD is {{DogName.name | uppercase}}: <button title='If {{DogName.name || uppercase}} is less than 1 enter 1'></button>
-        <input type="number" min='0' max='20' ng-model='DogName.age' name='age' required autofocus>
+        <input type="number" min='0' max='20' ng-model='DogName.age' autofocus name='age' required>
       </li>
       <li>What BREED is {{DogName.name | uppercase}}:
         <select ng-model='DogName.breed' name='breed' required>
@@ -54,7 +54,7 @@
           <input type="text" ng-model='DogName.job' name='job' required placeholder='What is your JOB?'>
         </span>
       </li>
-      <li>Is {{DogName.name | uppercase}} a FOSTER dog: <span title='When you foster, you agree to take a homeless dog into your home and give him or her care and attention either for a predetermined period of time or until the dog is addopted' class='fa fa-question' aria-hidden='true'></span>
+      <li>Is {{DogName.name | uppercase}} a FOSTER dog: <span title='When you foster, you agree to take a homeless dog into your home and give him or her care and attention either for a predetermined period of time or until the dog is addopted' class='fa fa-question fa-2x' aria-hidden='true'></span>
         <input type="radio" value='Yes' ng-model='DogName.foster' name='foster' required class='dogInfoRadio left'>
         <label for="foster">Yes</label>
         <input type="radio" value='No' ng-model='DogName.foster' name='foster' required class='dogInfoRadio'>
@@ -79,7 +79,7 @@
           <option ng-repeat='s in states'>{{s.name}}</option>
         </select>
       </li>
-      <li>What type of TRANNING does {{DogName.name | uppercase}} have: <span title='Therapy Dogs are dogs that do volunteer visits at hospitals, class rooms, or other facilities. The handler is not paid and does not work at the facility' class='fa fa-question' aria-hidden='true'></span>
+      <li>What type of TRANNING does {{DogName.name | uppercase}} have: <span title='Therapy Dogs are dogs that do volunteer visits at hospitals, class rooms, or other facilities. The handler is not paid and does not work at the facility' class='fa fa-question fa-2x' aria-hidden='true'></span>
         <select ng-model='DogName.tranning' name='tranning' required>
           <option>None or Basic</option>
           <option>Intermediate</option>
@@ -104,7 +104,7 @@
         <input type="radio" ng-model='DogName.vet' value='never' name='vet' required class='personalInfoRadio'>
         <label for="vet">Never</label>
       </li>
-      <li>Compliance with Local Laws: <span title='Ther are laws where you live that require certain vacinations, tags, or registration if complience dependes on this insurance check yes' class='fa fa-question' aria-hidden='true'></span>
+      <li>Compliance with Local Laws: <span title='Ther are laws where you live that require certain vacinations, tags, or registration if complience dependes on this insurance check yes' class='fa fa-question fa-2x' aria-hidden='true'></span>
         <input type="radio" ng-model='DogName.compliance' value='Yes' name='compliance' required>
         <label for="compliance">Yes</label>
         <input type="radio" ng-model='DogName.compliance' value='No' name='compliance' required>
@@ -144,7 +144,7 @@
       <label for="injure">No</label>
       <section ng-if='DogName.injure==="Yes"?true:false' class='yesInjure'>
         <input type="radio" value='Injure' ng-model='DogName.ik' name='status' >
-        <label for="status">Injure</label>
+        <label for="status">Injured</label>
         <input type="radio" value='Killed' ng-model='DogName.ik' name='status'>
         <label for="status">Killed</label>
         <p ng-if='DogName.ik==="Injure"?true:false'>
@@ -161,7 +161,7 @@
         </p>
       </section>
       </li>
-      <li>Has Animal Control been called: <span title='Such as animal control, Dog Catcher, Law Enforchment, Dog Wardern, Officer, Town or and other Government Official' class='fa fa-question' aria-hidden='true'></span>
+      <li>Has Animal Control been called: <span title='Such as animal control, Dog Catcher, Law Enforchment, Dog Wardern, Officer, Town or and other Government Official' class='fa fa-question fa-2x' aria-hidden='true'></span>
         <input type="radio" value='Yes' ng-model='DogName.control' name='control' required>
         <label for="control">Yes</label>
         <input type="radio" value='No' ng-model='DogName.control' name='control' required>
