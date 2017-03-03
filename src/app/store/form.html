@@ -138,12 +138,12 @@
         <label for="abuse">No</label>
       </li>
       <li>Has {{DogName.name | uppercase}} injured or killed another animal:
-      <input type="radio" value='Yes' ng-model='DogName.injure' name='injure' require>
+      <input type="radio" value='Yes' ng-model='DogName.injured' name='injure' require>
       <label for="injure">Yes</label>
-      <input type="radio" value='No' ng-model='DogName.injure' name='injure' require>
+      <input type="radio" value='No' ng-model='DogName.injured' name='injure' require>
       <label for="injure">No</label>
       <section ng-if='DogName.injure==="Yes"?true:false' class='yesInjure'>
-        <input type="radio" value='Injure' ng-model='DogName.ik' name='status' >
+        <input type="radio" value='Injured' ng-model='DogName.ik' name='status' >
         <label for="status">Injured</label>
         <input type="radio" value='Killed' ng-model='DogName.ik' name='status'>
         <label for="status">Killed</label>
@@ -179,6 +179,7 @@
           <input type="radio" value='Child' ng-model='DogName.hc' name='hc' required>
           <label for="hc">Child</label>
           <select ng-model='DogName.HiStatus' name='HiStatus' required>
+            <option value="" disabled selected>Please select one</option>
             <option>Leaving minor burising, scratch but no broken skin</option>
             <option>Breaking skin, no permanent scarring</option>
             <option>Requiring medical attention and/or stitches</option>
@@ -195,7 +196,7 @@
   <section ng-show='overview' class='overview'>
     <p>{{DogName.name | uppercase}} wants to THANK YOU!</p>
     <ul>
-      <li ng-repeat='n in DogName'>{{n}}</li>
+      <li ng-repeat='n in Overview'>{{n}}</li>
     </ul>
   </section>
 </form>
