@@ -114,8 +114,17 @@ label{
 .dogInfoRadio label{
 
 }
-.personalInfoRadio{
-
+::-webkit-input-placeholder{
+  font-size:14pt;
+}
+::-moz-placeholder{
+  font-size:14pt;
+}
+:-ms-input-placeholder{
+  font-size:16pt;
+}
+input:-moz-placeholder{
+  font-size:16pt;
 }
 .fa{
   color:#385076;
