@@ -6,10 +6,6 @@ angular
   });
 
   function FormCtrl($scope){
-    /*
-
-    */
-
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
@@ -96,6 +92,39 @@ angular
        DogName.vet = 'How often does '+DogName.name+'visit the Vet: '+ DogName.vet;
        DogName.weight = 'How much does '+DogName.name+' Weigh: '+ DogName.weight;
        DogName.work = 'Is '+DogName.name+ 'involved in your Work: '+ DogName.work;
+       $scope.doggie =[
+         {name:DogName.work},
+         {name:DogName.abuse},
+         {name:DogName.age},
+         {name:DogName.area},
+         {name:DogName.bathroom},
+         {name:DogName.breed},
+         {name:DogName.changes},
+         {name:DogName.children},
+         {name:DogName.compliance},
+         {name:DogName.control},
+         {name:DogName.email},
+         {name:DogName.fixed},
+         {name:DogName.foster},
+         {name:DogName.gender},
+         {name:DogName.home},
+         {name:DogName.human},
+         {name:DogName.injured},
+         {name:DogName.name},
+         {name:DogName.tranning},
+         {name:DogName.vet},
+         {name:DogName.weight},
+         {name:DogName.work},
+         {name:DogName.hc},
+         {name:DogName.HiStatus},
+         {name:DogName.discribe},
+         {name:DogName.restrictions},
+         {name:DogName.change},
+         {name:DogName.job},
+         {name:DogName.ik},
+         {name:DogName.number}
+       ];
+
     }
 
 

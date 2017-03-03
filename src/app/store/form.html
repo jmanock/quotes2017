@@ -21,7 +21,7 @@
           <option ng-repeat='b in breeds'>{{b.name}}</option>
         </select>
       </li>
-      <li>How many POUNDS is {{DogName.name | uppercase}}:
+      <li>How much does {{DogName.name | uppercase}} WEIGH:
         <input type="number" min='0' ng-model='DogName.weight' name='weight' required>
       </li>
       <li>Where does {{DogName.name | uppercase}} go to the BATHROOM:
@@ -196,7 +196,7 @@
   <section ng-show='overview' class='overview'>
     <p>{{DogName.name | uppercase}} wants to THANK YOU!</p>
     <ul>
-      <li ng-repeat='n in Overview'>{{n}}</li>
+      <li ng-repeat='n in DogName'>{{n.name}}</li>
     </ul>
   </section>
 </form>
