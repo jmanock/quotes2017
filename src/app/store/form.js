@@ -6,6 +6,7 @@ angular
   });
 
   function FormCtrl($scope){
+    $scope.doggie = [];
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
@@ -92,7 +93,7 @@ angular
        DogName.vet = 'How often does '+DogName.name+'visit the Vet: '+ DogName.vet;
        DogName.weight = 'How much does '+DogName.name+' Weigh: '+ DogName.weight;
        DogName.work = 'Is '+DogName.name+ 'involved in your Work: '+ DogName.work;
-       $scope.doggie =[
+      $scope.something =[
          {name:DogName.work},
          {name:DogName.abuse},
          {name:DogName.age},
@@ -124,7 +125,7 @@ angular
          {name:DogName.ik},
          {name:DogName.number}
        ];
-
+       $scope.something.push(doggie);
     }
 
 
