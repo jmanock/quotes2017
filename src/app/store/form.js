@@ -4,12 +4,13 @@ angular
     templateUrl: 'app/store/form.html',
     controller: FormCtrl
   });
-
+  $scope.DgName = [];
   function FormCtrl($scope){
     $scope.doggie = [];
     $scope.Name = function(DogName){
       $scope.name = true;
       $scope.gender = true;
+      DgName.push(DogName);
     }
 
     $scope.Gender = function(DogName){
@@ -20,6 +21,7 @@ angular
       }else{
         DogName.genderInfo = 'Spayed';
       }
+      DgName.push(DogName);
     }
 
     $scope.DogInfo = function(DogName){
@@ -30,12 +32,14 @@ angular
         $scope.personalInfo = true;
       }
       console.log(DogName);
+      DgName.push(DogName);
     }
 
     $scope.PersonalInfo = function(DogName){
       $scope.homeInfo = true;
       $scope.personalInfo = false;
       console.log(DogName);
+      Dgname.push(DogName);
     }
 
     $scope.HomeInfo = function(DogName){
@@ -49,9 +53,13 @@ angular
       }
       $scope.homeInfo = false;
       $scope.overview = true;
-      Overview(DogName);
+      DgName.push(DogName);
+      Overview(DgName);
     }
     $scope.Overview = function(DogName){
+      console.log(DogName);
+      // Maybe foreach to run threw everything in the list?
+      // Return results
       if(DogName.human === 'Yes'){
         DogName.hc = 'Did '+DogName.name+' hurt a Child or Adult: '+DogName.hc;
         DogName.HiStatus ='How bad was '+DogName.name+"'s attack: "+DogName.HiStatus;
