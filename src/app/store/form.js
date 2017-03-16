@@ -125,7 +125,7 @@ angular
          {name:DogName.ik},
          {name:DogName.number}
        ];
-       $scope.something.push(doggie);
+
     }
 
 
