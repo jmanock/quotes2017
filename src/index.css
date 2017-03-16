@@ -32,10 +32,10 @@ h1{
   left:0;
 }
 .name, .gender{
-  margin-left:40%;
+  margin-left:35%;
   margin-top:15%;
   font-weight:bold;
-
+  font-size:1.5em;
 }
 .name input{
   background:rgba(255,255,255,.1);
@@ -68,7 +68,8 @@ input[type=button]:enabled{
 }
 input[type=button]:disabled{
   cursor:not-allowed;
-  background-color:#385076;
+  background-color:#339999;
+  color:white;
   border:none;
   font-size:16px;
   margin:0;
