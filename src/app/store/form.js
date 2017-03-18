@@ -69,10 +69,31 @@ angular
           DogName.number ='How many times has '+DogName.name+' hurt another animal: '+DogName.number;
         }
 
-        
-        delete(DogName.genderInfo);
+        DogName.abuse = 'Was '+DogName.name + ' Abused: '+ DogName.abuse;
+        DogName.age = 'How Old is ' + DogName.name + ': '+DogName.age;
+        DogName.area = 'What Area does '+ DogName.name + ' live in: '+DogName.area;
+        DogName.bathroom = 'Where does '+ DogName.name+ ' go to the Bathroom: '+DogName.bathroom;
+        DogName.breed = 'What Breed is '+ DogName.name +': '+ DogName.breed;
+        DogName.children = 'Are there Children in the home: '+DogName.children;
+        DogName.compliance = 'Is '+DogName.name+ ' Compliance with local laws: '+DogName.compliance;
+        DogName.control = 'Has animal control been called on '+ DogName.name+': '+DogName.control;
+        DogName.email = 'What is your Email: '+ DogName.email;
+        DogName.fixed = 'Is '+DogName.name+' '+ DogName.genderInfo +': '+DogName.fixed;
+        DogName.foster = 'Is '+DogName.name+ ' a Foster Dog: '+DogName.foster;
+        DogName.gender = DogName.name +' is a: '+ DogName.gender;
+        DogName.home = 'What type of Home does '+DogName.name+ ' live in: '+ DogName.home;
+        DogName.human = 'Has '+ DogName.name + ' caused Human injury: '+ DogName.human;
+        DogName.tranning = 'What type of Tranning does '+DogName.name+' have: '+ DogName.tranning;
+        DogName.vet = 'How often does '+DogName.name+' visit the Vet: '+ DogName.vet;
+        DogName.weight = 'How much does '+DogName.name+' Weigh: '+ DogName.weight;
+        DogName.work = 'Is '+DogName.name+' involved in your Work: '+ DogName.work;
+        DogName.sleep = 'Where does '+DogName.name+' Sleep: '+DogName.sleep;
+        DogName.state = 'What State does '+DogName.name+' live: '+DogName.state;
+        DogName.injured = 'Has '+DogName.name+ ' Injured or Killed another animal: '+ DogName.injured;
 
         $scope.final = DogName;
+        delete(DogName.name);
+        delete(DogName.genderInfo);
         console.log(DogName);
 
       }
