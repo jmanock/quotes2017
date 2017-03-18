@@ -47,9 +47,7 @@ angular
       $scope.homeInfo = false;
       $scope.overview = true;
       DgName.push(DogName);
-      $scope.Final(DgName);
-    }
-    $scope.Final = function(DgName){
+
       for(var i = 0; i<DgName.length; i++){
         var DogName = DgName[i];
         if(DogName.human === 'Yes'){
@@ -59,9 +57,11 @@ angular
           DogName.restrictions = 'Do you or '+DogName.name+' have any restrictions: '+ DogName.restrictions;
           DogName.change = 'What changes have you made after the attact: '+ DogName.change;
         }
+
         if(DogName.work === 'Yes'){
           DogName.job = 'What is your job: '+DogName.job;
         }
+
         if(DogName.injured === 'Yes'){
           DogName.ik = 'Did '+DogName.name+' injure or kill another animal: '+DogName.ik;
           DogName.number ='How many times has '+DogName.name+' hurt another animal: '+DogName.number;
@@ -89,12 +89,9 @@ angular
         DogName.weight = 'How much does '+DogName.name+' Weigh: '+ DogName.weight;
         DogName.work = 'Is '+DogName.name+ 'involved in your Work: '+ DogName.work;
       }
-
-
-
-
-
-      $scope.something =[
+    }
+    $scope.Final = function(DgName){
+            $scope.something =[
          {name:DogName.work},
          {name:DogName.abuse},
          {name:DogName.age},
