@@ -49,10 +49,8 @@ angular
       DgName.push(DogName);
 
       for(var i = 0; i<DgName.length; i++){
-        // This looks right
-        // Need to push them into something
+
         var DogName = DgName[i];
-         $scope.final = [];
 
          if(DogName.human === 'Yes'){
            DogName.hc = 'Did '+DogName.name+' hurt a Child or Adult: '+DogName.hc;
@@ -71,31 +69,12 @@ angular
           DogName.number ='How many times has '+DogName.name+' hurt another animal: '+DogName.number;
         }
 
-        DogName.abuse = 'Was '+ DogName.name+' Abused: '+DogName.abuse;
-        DogName.age = 'How old is '+DogName.name+': '+DogName.age;
-        DogName.area = 'What Area do you live in: '+DogName.area;
-        DogName.bathroom = 'Where does '+DogName.name+' go to the Bathroom: '+ DogName.bathroom;
-        DogName.breed = 'What Breed is '+DogName.name + ':'+ DogName.breed;
-        DogName.changes = 'Changes: '+ DogName.changes;
-        DogName.children = 'Children in the home: '+DogName.children;
-        DogName.compliance = 'Compliance with Local Laws: '+ DogName.compliance;
-        DogName.control = 'Has animal control been called on '+DogName.name+': ' +DogName.control;
-
-        DogName.email = 'Email: '+DogName.email;
-        DogName.fixed = 'Is '+DogName.name+' '+DogName.genderInfo+': '+DogName.fixed;
-        DogName.foster = 'Is '+ DogName.name+ ' a Foster Dog:' + DogName.foster;
-        DogName.gender = 'What Gender is '+DogName.name+': '+ DogName.gender;
-        DogName.home = 'Type of Home does '+DogName.name+' live in: ' + DogName.home;
-        DogName.human = 'Has '+ DogName.name+' caused Human injury: '+ DogName.human;
-        DogName.injured = 'Has '+DogName.name+' Injured or Killed another animal: '+ DogName.injured;
-        DogName.name = 'Name: '+ DogName.name;
-        DogName.tranning = 'What type of Tranning does '+DogName.name+' have: '+ DogName.tranning;
-        DogName.vet = 'How often does '+DogName.name+'visit the Vet: '+ DogName.vet;
-        DogName.weight = 'How much does '+DogName.name+' Weigh: '+ DogName.weight;
-        DogName.work = 'Is '+DogName.name+ 'involved in your Work: '+ DogName.work;
+        
+        delete(DogName.genderInfo);
 
         $scope.final = DogName;
-        
+        console.log(DogName);
+
       }
     }
 
