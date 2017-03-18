@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  border:0;
+  padding:0;
+  font-family:'Helvitca Neue';
+}
+body{
+  /*background-color:#385076;*/
+  /*background-color:#e8eeef;*/
+  background-color:lightgray;
+  color:#333333;
+}
+h1{
+  text-align:center;
+  background-color:#339999;
+}
+.background-image{
+  background-image:url('app/images/dogRun.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  height:550px;
+  z-index:-1;
+  -webkit-filter:blur(4px);
+  -moz-filter:blur(4px);
+  -o-filter:blur(4px);
+  -ms-filter:blur(4px);
+  filter:blur(4px);
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+.name, .gender{
+  margin-left:35%;
+  margin-top:15%;
+  font-weight:bold;
+  font-size:1.5em;
+}
+.name input{
+  background:rgba(255,255,255,.1);
+  border:none;
+  font-size:16px;
+  margin:0;
+  outline:0;
+  padding:7px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  background-color:#385076;
+  color:#8a97a0;
+  -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow:0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom:30px;
+}
+input[type=button]:enabled{
+  cursor:pointer;
+  background-color:#339999;
+  color:white;
+  border:none;
+  font-size:16px;
+  margin:0;
+  outline:0;
+  padding:7px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+input[type=button]:disabled{
+  cursor:not-allowed;
+  background-color:#339999;
+  color:white;
+  border:none;
+  font-size:16px;
+  margin:0;
+  outline:0;
+  padding:7px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+.dogInfo, .personalInfo, .homeInfo, .overview{
+  margin-left:20%;
+  margin-top:5%;
+  margin-right:20%;
+  background:rgba(255,255,255,0.35);
+  border-radius:3px;
+  box-shadow:0 1px 5px rgba(0,0,0,.25);
+  /*position:fixed;*/
+  right:0;
+  left:0;
+  z-index:2;
+  padding:0 10px;
+  overflow:scroll;
+}
+.dogInfo ul, .personalInfo ul, .homeInfo ul, .overview ul{
+  list-style-type:none;
+}
+.dogInfo input, .dogInfo select, .dogInfo textarea, .dogInfo label, .personalInfo input, .personalInfo select, .personalInfo textarea, .personalInfo label, .homeInfo input, .homeInfo select, .homeInfo textarea, .homeInfo label{
+  font-size:15px;
+  margin-bottom:2px;
+}
+.dogInfo input[type=number],.dogInfo select, .dogInfo textarea, .dogInfo input[type=text], .personalInfo input[type=email], .personalInfo select, .personalInfo textarea, .homeInfo select, .homeInfo textarea{
+  width:100%;
+  background:lightgray;
+  border:0;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+}
+label{
+  color:#1a1a1a;
+  font-weight:bold;
+}
+.dogInfoRadio label{
+
+}
+::-webkit-input-placeholder{
+  font-size:14pt;
+}
+::-moz-placeholder{
+  font-size:14pt;
+}
+:-ms-input-placeholder{
+  font-size:16pt;
+}
+input:-moz-placeholder{
+  font-size:16pt;
+}
+.fa{
+  color:#385076;
+  cursor:pointer;
+}
