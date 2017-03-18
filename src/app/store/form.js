@@ -2,9 +2,25 @@ angular
   .module('app')
   .component('fountainForm', {
     templateUrl: 'app/store/form.html',
-    controller: FormCtrl
+    controller: FormCtrl,
+    directive:ngEnter
   });
+  function ngEnter(){
+    return function(scope, element, attrs){
+      element.bind('keydown keypress', function(event){
+        if(event.which === 13){
+          scope.$apply(function(){
+            scope.$eval(attrs.ngEnter, {'event':event});
+          });
+          event.preventDefault();
+        }
+      });
+    }
+  }
   function FormCtrl($scope){
+    // Need to fix the enter button
+    // Should fix the error at the end
+    // Make live
     var DgName = [];
     $scope.Name = function(DogName){
       $scope.name = true;
@@ -92,7 +108,6 @@ angular
         DogName.injured = 'Has '+DogName.name+ ' Injured or Killed another animal: '+ DogName.injured;
 
         $scope.final = DogName;
-        delete(DogName.name);
         delete(DogName.genderInfo);
         console.log(DogName);
 

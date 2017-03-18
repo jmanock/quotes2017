@@ -1,8 +1,8 @@
-<form action="" name='DogForm'>
+<form name='DogForm' nonvalidate>
   <div class="background-image"></div>
   <section ng-hide='name' class='name'>
     <input type="text" ng-model='DogName.name' required name='dname' autofocus placeholder="Your Dog's Name" class='dname'>
-    <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
+    <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid' ng-eneter='Name(DogName)'>
   </section>
   <section ng-show='gender' class='gender'>Is {{DogName.name | uppercase}}:
     <input type="radio" value='Female' ng-model='DogName.gender' name='gender' required>
@@ -14,7 +14,7 @@
   <section ng-show='dogInfo' class='dogInfo'>
     <ul>
       <li>How OLD is {{DogName.name | uppercase}}: <button title='If {{DogName.name || uppercase}} is less than 1 enter 1'></button>
-        <input type="number" min='0' max='20' ng-model='DogName.age' autofocus name='age' required>
+        <input type="number" min='0' max='20' ng-model='DogName.age' name='age' required>
       </li>
       <li>What BREED is {{DogName.name | uppercase}}:
         <select ng-model='DogName.breed' name='breed' required>
@@ -94,7 +94,7 @@
         <input type="radio" name='area' ng-model='DogName.area' value='Country' required class='personalInfoRadio left'>
         <label for="area">Country and/or {{DogName.name | uppercase}} travels with you</label><br>
         <input type="radio" name='area' ng-model='DogName.area' value='City' required class='personalInfoRadio'>
-        <label for="area">City, Town, Suburb, Campus</label>
+        <label for="area">City, Town, Suburb, Campus</label> <br>
       </li>
       <li>Veterinarian Visits: <br>
         <input type="radio" ng-model='DogName.vet' value='annually' name='vet' required class='personalInfoRadio'>
