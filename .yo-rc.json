@@ -2,33 +2,8 @@
   "generator-gulp-angular": {
     "version": "1.1.1",
     "props": {
-      "angularVersion": "~1.2.29",
-      "angularModules": [
-        {
-          "key": "animate",
-          "module": "ngAnimate"
-        },
-        {
-          "key": "cookies",
-          "module": "ngCookies"
-        },
-        {
-          "key": "touch",
-          "module": "ngTouch"
-        },
-        {
-          "key": "sanitize",
-          "module": "ngSanitize"
-        },
-        {
-          "key": "messages",
-          "module": "ngMessages"
-        },
-        {
-          "key": "aria",
-          "module": "ngAria"
-        }
-      ],
+      "angularVersion": "~1.5.3",
+      "angularModules": [],
       "jQuery": {
         "key": "jquery1"
       },
@@ -73,25 +48,6 @@
         "e2e": "e2e",
         "tmp": ".tmp"
       }
-    }
-  },
-  "generator-fountain-angular1": {
-    "version": "1.0.0-rc2",
-    "props": {
-      "framework": "angular1",
-      "modules": "inject",
-      "js": "js",
-      "ci": [],
-      "css": "css",
-      "resolved": "/usr/local/lib/node_modules/generator-fountain-webapp/node_modules/generator-fountain-angular1/generators/app/index.js",
-      "namespace": "fountain-angular1",
-      "argv": {
-        "remain": [],
-        "cooked": [],
-        "original": []
-      },
-      "sample": "techs",
-      "router": "uirouter"
     }
   }
 }
