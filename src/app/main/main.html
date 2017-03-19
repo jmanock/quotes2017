@@ -1,3 +1,5 @@
+<h1><img src="app/main/images/DogBiteLogo.png" alt=""></h1>
+
 <form name='DogForm' nonvalidate>
   <div class="background-image"></div>
 
@@ -15,7 +17,7 @@
     <input type="button" value='Next' ng-click='Gender(DogName)' ng-disabled='DogForm.gender.$invalid'>
   </section>
 
-  <section ng-show='dogInfo'>
+  <section ng-show='dogInfo' class='dogInfo'>
     <ul>
       <li>How OLD is {{DogName.name | uppercase}}: <span title='If {{DogName.name | uppercase}} is less than 1 enter 1' class='fa fa-question fa-2x' aria-hidden='true'></span>
         <input type="number" min='1' max='20' ng-model='DogName.age' required>
@@ -104,18 +106,18 @@
         </select>
       </li>
 
-      <li>What type of AREA do you live in:
+      <li>What type of AREA do you live in: <br>
         <input type="radio" name='area' ng-model='DogName.area' value='Country' required class='personalInfoRadio'>
-        <label for="area">Country and/or {{DogName.name | uppercase}} travels with you</label>
+        <label for="area">Country and/or {{DogName.name | uppercase}} travels with you</label><br>
         <input type="radio" name='area' ng-model='DogName.area' value='City' required class='pesonalInfoRadio'>
         <label for="area">City, Town, Suburb, Campus</label>
       </li>
 
       <li>Veterinarian Visits: <br>
         <input type="radio" ng-model='DogName.vet' value='annually' name='vet' required class='personalInfoRadio'>
-        <label for="vet">Annually</label>
+        <label for="vet">Annually</label> <br>
         <input type="radio" ng-model='DogName.vet' value='illness' name='vet' required class='personalInfoRadio'>
-        <label for="vet">Annaully and would treat for illness or injury</label>
+        <label for="vet">Annaully and would treat for illness or injury</label><br>
         <input type="radio" ng-model='DogName.vet' value='never' name='vet' required class='personalInfoRadio'>
         <label for="vet">Never</label>
       </li>
@@ -173,7 +175,7 @@
             <input type="radio" value='More' ng-model='DogName.number' name='number' required>
             <label for="number">More than One</label>
           </p>
-          <p ng-if='DogName.ik === "Injure"?true:false'>
+          <p ng-if='DogName.ik === "Injured"?true:false'>
             <input type="radio" value='One' ng-model='DogName.number' name='number' required>
             <label for="number">One</label>
             <input type="radio" value='More' ng-model='DogName.number' name='number' required>
@@ -200,7 +202,7 @@
           <input type="radio" value='Child' ng-model='DogName.hc' name='hc' required>
           <label for="hc">Adult</label>
           <select ng-model='DogName.HiStatus' name='HiStatus' required>
-            <option disabled selected>Please select One</option>
+            <option value='' disabled selected>Please select One</option>
             <option>Leaving minor burising, scratch but no broken skin</option>
             <option>Breaking skin, no permanent scarring</option>
             <option>Requiring medical attention and/or stitches</option>
