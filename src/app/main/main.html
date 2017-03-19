@@ -24,6 +24,7 @@
       </li>
       <li>What BREED is {{DogName.name | uppercase}}:
         <select ng-model='DogName.breed' name='breed' required>
+          <option value='' disabled selected>Please Select One</option>
           <option ng-repeat='b in breeds'>{{b.name}}</option>
         </select>
       </li>
@@ -34,6 +35,7 @@
 
       <li>Where does {{DogName.name | uppercase}} go to the BATHROOM:
         <select ng-model='DogName.bathroom' name='bathroom' required>
+          <option value='' disabled selected>Please Select One</option>
           <option>Inside completely enclosed fenced area</option>
           <option>Underground electric dog containment system</option>
           <option>Outside loos in unfenced yard</option>
@@ -46,6 +48,7 @@
 
       <li>Wher does {{DogName.name | uppercase}} SLEEP:
         <select ng-model='DogName.sleep' name='sleep' required>
+          <option value='' disabled selected>Please Select One</option>
           <option>Inside Home</option>
           <option>Garage</option>
           <option>Ouside loose in fenced yard</option>
@@ -90,12 +93,14 @@
 
       <li>What STATE does {{DogName.name | uppercase}} live in:
         <select ng-model='DogName.state' name='state' required>
+          <option value='' disabled selected>Please Select One</option>
           <option ng-repeat='s in states'>{{s.name}}</option>
         </select>
       </li>
 
       <li>What type of TRANNING does {{DogName.name | uppercase}} have: <span title='Therapy Dogs are dogs that do volunteer visits at hospitals, classrooms, or other facilities. The handler is not paid and does not work at the facility' class='fa fa-question fa-2x' aria-hidden='true'></span>
         <select ng-model='DogName.tranning' name='tranning' required>
+          <option value='' disabled selected>Please Select One</option>
           <option>None or Basic</option>
           <option>Intermediate</option>
           <option>Advanced</option>
@@ -136,6 +141,7 @@
     <ul>
       <li>Are there any CHILDREN in the home:
         <select ng-model='DogName.children' name='children' required>
+          <option value='' disabled selected>Please Select One</option>
           <option>No</option>
           <option>Children under 16 living in the Home</option>
           <option>Daycare or baby sitting service in the Home</option>
@@ -159,12 +165,12 @@
         <label for="abuse">No</label>
       </li>
 
-      <li>Has {{DogName.name | uppercase}} injured or killed another animal:
+      <li>Has {{DogName.name | uppercase}} Injured or Killed another animal:
         <input type="radio" value='Yes' ng-model='DogName.injured' name='injure' required>
         <label for="injure">Yes</label>
         <input type="radio" value='No' ng-model='DogName.injured' name='injure' required>
         <label for="injure">No</label>
-        <section ng-if='DogName.injure === "Yes"?true:false' class='yesInjure'>
+        <section ng-if='DogName.injured === "Yes"?true:false' class='yesInjure'>
           <input type="radio" value='Injured' ng-model='DogName.ik' name='status' required>
           <label for="status">Injured</label>
           <input type="radio" value='Killed' ng-model='DogName.ik' name='status' required>
@@ -198,11 +204,11 @@
         <label for="human">No</label>
         <section ng-if='DogName.human === "Yes"?true:false'>
           <input type="radio" value='Adult' ng-model='DogName.hc' name='hc' required>
-          <label for="hc">Adult</label>
+          <label for="hc">Child</label>
           <input type="radio" value='Child' ng-model='DogName.hc' name='hc' required>
           <label for="hc">Adult</label>
           <select ng-model='DogName.HiStatus' name='HiStatus' required>
-            <option value='' disabled selected>Please select One</option>
+            <option value='' disabled selected>Please Select One</option>
             <option>Leaving minor burising, scratch but no broken skin</option>
             <option>Breaking skin, no permanent scarring</option>
             <option>Requiring medical attention and/or stitches</option>
@@ -214,7 +220,7 @@
         </section>
       </li>
     </ul>
-    <input type="button" value='Finished' ng-click='HomeInfo(DogName)' ng-disabled='DogForm.children.$invalid || DogForm.home.$invalid || DogForm.abuse.$invalid || DogForm.control.$invalid || DogForm.human.$invalid || DogForm.HiStatus || DogForm.changes.$invalid || DogForm.discribe.$invalid || DogForm.restrictions.$invalid || DogForm.hc.$invalid || DogForm.number.$invalid || DogForm.ik.$invalid || DogForm.ik.$invalid || DogForm.injured.$invalid'>
+    <input type="button" value='Finished' ng-click='HomeInfo(DogName)' ng-disabled='DogForm.restrictions.$invalid || DogForm.changes.$invalid || DogForm.discribe.$invalid || DogForm.HiStatus.$invalid || DogForm.hc.$invalid || DogForm.human.$invalid || DogForm.control.$invalid || DogForm.number.$invalid || DogForm.ik.$invalid || DogForm.injured.$invalid || DogForm.abuse.$invalid || DogForm.children.$invalid || DogForm.home.$invalid'>
   </section>
 
   <section ng-show='overview' class='overview'>

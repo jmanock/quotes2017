@@ -24,17 +24,20 @@
       }
     }
 
-    $scope.DogInfo = function(DogInfo){
+    $scope.DogInfo = function(DogName){
       $scope.dogInfo = false;
       $scope.personalInfo = true;
     }
 
-    $scope.PersonalInfo = function(DogInfo){
+    $scope.PersonalInfo = function(DogName){
       $scope.homeInfo = true;
       $scope.personalInfo = false;
     }
 
-    $scope.HomeInfo = function(DogInfo){
+    $scope.HomeInfo = function(DogName){
+      $scope.homeInfo = false;
+      $scope.overview = true;
+
       if(DogName.injur === 'No'){
         delete(DogName.number);
         delete(DogName.ik);
@@ -43,8 +46,6 @@
         delete(DogName.hc);
         delete(DogName.HiStatus);
       }
-      $scope.homeInfo = false;
-      $scope.overview = true;
 
       if(DogName.work === 'Yes'){
         DogName.job = 'What is your job: '+ DogName.job;
@@ -54,7 +55,7 @@
         DogName.HiStatus = 'How bad was '+DogName.name+"'s attack: "+ DogName.HiStatus;
         DogName.discribe = 'Discribe '+DogName.name+"'s attack: "+ DogName.discribe;
         DogName.restrictions = 'Do you or '+ DogName.name + ' have any restrictions: '+DogName.restrictions;
-        DogName.change = 'What changes have you made after the attack: '+ DogName.change;
+        DogName.changes = 'What changes have you made after the attack: '+ DogName.changes;
       }
       if(DogName.injured === 'Yes'){
         DogName.ik = 'Did '+DogName.name+' injure or kill another animal: '+DogName.ik;
@@ -77,8 +78,8 @@
       DogName.human = 'Has '+DogName.name + ' caused Human Injury: '+DogName.human;
       DogName.tranning = 'What type of TRANNING does '+DogName.name + ' have: '+DogName.tranning;
       DogName.vet = 'How often does '+DogName.name+ ' visit the vet: '+DogName.vet;
-      DogName.weight = 'How much does '+DogName.name + 'WEIGH: '+DogName.weight;
-      Dog.work = 'Is '+DogName.name + 'involved in your WORK: '+DogName.work;
+      DogName.weight = 'How much does '+DogName.name + ' WEIGH: '+DogName.weight;
+      DogName.work = 'Is '+DogName.name + 'involved in your WORK: '+DogName.work;
       DogName.sleep = 'Where does '+DogName.name + ' SLEEP: '+ DogName.sleep;
       DogName.state = 'What STATE does '+DogName.name +' live: '+DogName.state;
       DogName.injured = 'Has '+DogName.name + ' Injured or Killed another Animal: '+DogName.injured;
