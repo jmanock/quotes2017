@@ -14,7 +14,7 @@ h1{
   margin-top:0;
 }
 .background-image{
-  background-image:url('main/images/dogRun.jpg');
+  background-image:url('app/main/images/dogRun.jpg');
   background-repeat:no-repeat;
   background-position:center;
   height:550px;
