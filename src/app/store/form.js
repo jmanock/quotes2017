@@ -18,9 +18,6 @@ angular
     }
   }
   function FormCtrl($scope){
-    // Need to fix the enter button
-    // Should fix the error at the end
-    // Make live
     var DgName = [];
     $scope.Name = function(DogName){
       $scope.name = true;
@@ -39,7 +36,7 @@ angular
 
     $scope.DogInfo = function(DogName){
       if(DogName.age === '' || DogName.weight === '' || DogName.bathroom === '' || DogName.sleep === '' || DogName.work === '' || DogName.foster === '' || DogName.fixed === ''){
-        console.log('Please answer all questions');
+
       }else{
         $scope.dogInfo = false;
         $scope.personalInfo = true;
@@ -109,7 +106,7 @@ angular
 
         $scope.final = DogName;
         delete(DogName.genderInfo);
-        console.log(DogName);
+
 
       }
     }
