@@ -1,0 +1,224 @@
+<form name='DogForm' nonvalidate>
+  <div class="background-image"></div>
+
+  <section ng-hide='name' class='name'>
+    <input type="text" ng-model='DogName.name' required name='dname' autofocus placeholder="Your Dog's Name" class='dname'>
+    <input type="button" value='Next' ng-click='Name(DogName)' ng-disabled='DogForm.dname.$invalid'>
+  </section>
+
+  <section ng-show='gender' class='gender'>
+    Is {{DogName.name | uppercase}}:
+    <input type="radio" value='Female' ng-model='DogName.gender' name='gender' required>
+    <label for="gender">Female</label>
+    <input type="radio" value='Male' ng-model='DogName.gender' name='gender' required>
+    <label for="gender">Male</label>
+    <input type="button" value='Next' ng-click='Gender(DogName)' ng-disabled='DogForm.gender.$invalid'>
+  </section>
+
+  <section ng-show='dogInfo'>
+    <ul>
+      <li>How OLD is {{DogName.name | uppercase}}: <span title='If {{DogName.name | uppercase}} is less than 1 enter 1' class='fa fa-question fa-2x' aria-hidden='true'></span>
+        <input type="number" min='1' max='20' ng-model='DogName.age' required>
+      </li>
+      <li>What BREED is {{DogName.name | uppercase}}:
+        <select ng-model='DogName.breed' name='breed' required>
+          <option ng-repeat='b in breeds'>{{b.name}}</option>
+        </select>
+      </li>
+
+      <li>How much does {{DogName.name | uppercase}} WEIGH:
+        <input type="number" min='0' ng-model='DogName.weight' name='weight' required>
+      </li>
+
+      <li>Where does {{DogName.name | uppercase}} go to the BATHROOM:
+        <select ng-model='DogName.bathroom' name='bathroom' required>
+          <option>Inside completely enclosed fenced area</option>
+          <option>Underground electric dog containment system</option>
+          <option>Outside loos in unfenced yard</option>
+          <option>Permanently Tied/tethered outside</option>
+          <option>On tie line for 1 hour or less at a time</option>
+          <option>In a permanent outside kennel</option>
+          <option>Leash Walked</option>
+        </select>
+      </li>
+
+      <li>Wher does {{DogName.name | uppercase}} SLEEP:
+        <select ng-model='DogName.sleep' name='sleep' required>
+          <option>Inside Home</option>
+          <option>Garage</option>
+          <option>Ouside loose in fenced yard</option>
+          <option>Ouside without any restraints</option>
+          <option>Permanent outside kennel</option>
+          <option>Tied out</option>
+        </select>
+      </li>
+
+      <li>Is {{DogName.name | uppercase}} integral or involved in your WORK:
+        <input type="radio" value='Yes' ng-model='DogName.work' name='work' required class='dogInfoRadio'>
+        <label for="work">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.work' name='work' required class='dogInfoRadio'>
+        <label for="work">No</label>
+        <span ng-if='DogName.work === "Yes"?true:false'>
+          <input type="text" ng-model='DogName.job' name='job' required placeholder='What is your JOB?'>
+        </span>
+      </li>
+
+      <li>Is {{DogName.name | uppercase}} a FOSTER dog: <span title='When you foster, you agree to take a homeless dog into your home and give him or her care and attention either for a predetermined period of time or until the dog is addopted' class='fa fa-question fa-2x' aria-hidden='true'></span>
+        <input type="radio" value='Yes' ng-model='DogName.foster' name='foster' required class='dogInfoRadio'>
+        <label for="foster">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.foster' name='foster' required class='dogInfoRadio'>
+        <label for="foster">No</label>
+      </li>
+
+      <li>Is {{DogName.name | uppercase}} {{DogName.genderInfo}}:
+        <input type="radio" value='Yes' ng-model='DogName.fixed' name='fixed' required class='dogInfoRadio'>
+        <label for="fixed">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.fixed' name='fixed' required class='dogInfoRadio'>
+        <label for="fixed">No</label>
+      </li>
+    </ul>
+    <input type="button" value='Next' ng-click='DogInfo(DogName)' ng-disabled='DogForm.age.$invalid ||DogForm.breed.$invalid || DogForm.bathroom.$invalid || DogForm.sleep.$invalid || DogForm.work.$invalid || DogForm.foster.$invalid || DogForm.fixed.$invalid || DogForm.job.$invalid'>
+  </section>
+
+  <section ng-show='personalInfo' class='personalInfo'>
+    <ul>
+      <li>What is your EMAIL:
+        <input type="email" ng-model='DogName.email' name='email' required>
+      </li>
+
+      <li>What STATE does {{DogName.name | uppercase}} live in:
+        <select ng-model='DogName.state' name='state' required>
+          <option ng-repeat='s in states'>{{s.name}}</option>
+        </select>
+      </li>
+
+      <li>What type of TRANNING does {{DogName.name | uppercase}} have: <span title='Therapy Dogs are dogs that do volunteer visits at hospitals, classrooms, or other facilities. The handler is not paid and does not work at the facility' class='fa fa-question fa-2x' aria-hidden='true'></span>
+        <select ng-model='DogName.tranning' name='tranning' required>
+          <option>None or Basic</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+          <option>Therapy Dog</option>
+          <option>Hunting, Gun, Sporting off Leash, Farm, Herding</option>
+          <option>Sled dog racing, Musing for hire, Freighting</option>
+          <option>War or Police Service dog, Professionally trained Personal Protection or Professional Trained Guard Dog</option>
+        </select>
+      </li>
+
+      <li>What type of AREA do you live in:
+        <input type="radio" name='area' ng-model='DogName.area' value='Country' required class='personalInfoRadio'>
+        <label for="area">Country and/or {{DogName.name | uppercase}} travels with you</label>
+        <input type="radio" name='area' ng-model='DogName.area' value='City' required class='pesonalInfoRadio'>
+        <label for="area">City, Town, Suburb, Campus</label>
+      </li>
+
+      <li>Veterinarian Visits: <br>
+        <input type="radio" ng-model='DogName.vet' value='annually' name='vet' required class='personalInfoRadio'>
+        <label for="vet">Annually</label>
+        <input type="radio" ng-model='DogName.vet' value='illness' name='vet' required class='personalInfoRadio'>
+        <label for="vet">Annaully and would treat for illness or injury</label>
+        <input type="radio" ng-model='DogName.vet' value='never' name='vet' required class='personalInfoRadio'>
+        <label for="vet">Never</label>
+      </li>
+
+      <li>Compliance with Local Laws: <span title='There are laws where you live that require certain vacinations, tags, or registration if complience dependes on this insurance check yes' class='fa fa-question fa-2x' aria-hidden='true'></span>
+        <input type="radio" ng-model='DogName.compliance' value='Yes' name='compliance' required>
+        <label for="compliance">Yes</label>
+        <input type="radio" ng-model='DogName.compliance' value='No' name='compliance' required>
+        <label for="compliance">No</label>
+      </li>
+    </ul>
+    <input type="button" value='Next' ng-click='PersonalInfo(DogName)' ng-disabled='DogForm.email.$invalid || DogForm.state.$invalid || DogForm.area.$invalid || DogForm.vet.$invalid || DogForm.compliance.$invalid || DogForm.tranning.$invalid'>
+  </section>
+
+  <section ng-show='homeInfo' class='homeInfo'>
+    <ul>
+      <li>Are there any CHILDREN in the home:
+        <select ng-model='DogName.children' name='children' required>
+          <option>No</option>
+          <option>Children under 16 living in the Home</option>
+          <option>Daycare or baby sitting service in the Home</option>
+          <option>Foster Children in the Home</option>
+        </select>
+      </li>
+
+      <li>Number of DOGS in the home:
+        <input type="radio" value='1' ng-model='DogName.home' name='home' required>
+        <label for="home">1</label>
+        <input type="radio" value='2to4' ng-model='DogName.home' name='home' required>
+        <label for="home">2 to 4</label>
+        <input type="radio" value='5orMore' ng-model='DogName.home' name='home' required>
+        <label for="home">5 or More</label>
+      </li>
+
+      <li>Have any permanent residents been convicted of animal or domestic abuse in the last 5 years: <br>
+        <input type="radio" value='Yes' ng-model='DogName.abuse' name='abuse' required>
+        <label for="abuse">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.abuse' name='abuse' required>
+        <label for="abuse">No</label>
+      </li>
+
+      <li>Has {{DogName.name | uppercase}} injured or killed another animal:
+        <input type="radio" value='Yes' ng-model='DogName.injured' name='injure' required>
+        <label for="injure">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.injured' name='injure' required>
+        <label for="injure">No</label>
+        <section ng-if='DogName.injure === "Yes"?true:false' class='yesInjure'>
+          <input type="radio" value='Injured' ng-model='DogName.ik' name='status' required>
+          <label for="status">Injured</label>
+          <input type="radio" value='Killed' ng-model='DogName.ik' name='status' required>
+          <label for="status">Killed</label>
+          <p ng-if='DogName.ik === "Killed"?true:false'>
+            <input type="radio" value='One' ng-model='DogName.number' name='number' required>
+            <label for="number">One</label>
+            <input type="radio" value='More' ng-model='DogName.number' name='number' required>
+            <label for="number">More than One</label>
+          </p>
+          <p ng-if='DogName.ik === "Injure"?true:false'>
+            <input type="radio" value='One' ng-model='DogName.number' name='number' required>
+            <label for="number">One</label>
+            <input type="radio" value='More' ng-model='DogName.number' name='number' required>
+            <label for="number">More that One</label>
+          </p>
+        </section>
+      </li>
+
+      <li>Has Animal Control been called on {{DogName.name | uppercase}}: <span title='Such as Animal Control, Dog Catcher, Law Enforcment, Dog Warden, Officer, Town and/or other Government Officaial' class='fa fa-question fa-2x' aria-hidden='true'></span>
+        <input type="radio" value='Yes' ng-model='DogName.control' name='control' required>
+        <label for="control">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.control' name='control' required>
+        <label for="control">No</label>
+      </li>
+
+      <li>Has {{DogName.name | uppercase}} caused HUMAN Injury:
+        <input type="radio" value='Yes' ng-model='DogName.human' name='human' required>
+        <label for="human">Yes</label>
+        <input type="radio" value='No' ng-model='DogName.human' name='human' required>
+        <label for="human">No</label>
+        <section ng-if='DogName.human === "Yes"?true:false'>
+          <input type="radio" value='Adult' ng-model='DogName.hc' name='hc' required>
+          <label for="hc">Adult</label>
+          <input type="radio" value='Child' ng-model='DogName.hc' name='hc' required>
+          <label for="hc">Adult</label>
+          <select ng-model='DogName.HiStatus' name='HiStatus' required>
+            <option disabled selected>Please select One</option>
+            <option>Leaving minor burising, scratch but no broken skin</option>
+            <option>Breaking skin, no permanent scarring</option>
+            <option>Requiring medical attention and/or stitches</option>
+            <option>More than once</option>
+          </select> <br>
+          <textarea name="discribe" cols="30" rows="10" placeholder='Please describe each event in detail:' ng-model='DogName.discribe'required></textarea><br>
+          <textarea name="restrictions" cols="30" rows="10" placeholder='What fines, restrictions, specific requirements were mandated as a result of each event?' ng-model='DogName.restrictions' required></textarea>
+          <textarea name="changes" cols="30" rows="10" placeholder='What changes have you made to prevent similar events?' ng-model='DogName.changes' required></textarea>
+        </section>
+      </li>
+    </ul>
+    <input type="button" value='Finished' ng-click='HomeInfo(DogName)' ng-disabled='DogForm.children.$invalid || DogForm.home.$invalid || DogForm.abuse.$invalid || DogForm.control.$invalid || DogForm.human.$invalid || DogForm.HiStatus || DogForm.changes.$invalid || DogForm.discribe.$invalid || DogForm.restrictions.$invalid || DogForm.hc.$invalid || DogForm.number.$invalid || DogForm.ik.$invalid || DogForm.ik.$invalid || DogForm.injured.$invalid'>
+  </section>
+
+  <section ng-show='overview' class='overview'>
+    <p>{{DogName.name | uppercase}} wants to THANK YOU!</p>
+    <ul>
+      <li ng-repeat='f in final'>{{f}}</li>
+    </ul>
+  </section>
+</form>
