@@ -142,10 +142,16 @@ input:required{
 
 }
 @media only screen and (min-width:320px){
+  body{
+    
+  }
   .background-image{
     margin-left:0;
   }
   .dogInfo, .personalInfo, .homeInfo, .overview{
+    font-size:.8em;
+    margin-left:5%;
     width:300px;
+    font-size:.8em;
   }
 }
