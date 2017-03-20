@@ -80,7 +80,7 @@ input[type=button]:disabled{
 .dogInfo, .personalInfo, .homeInfo, .overview{
   margin-left:20%;
   margin-top:5%;
-  margin-right:20%;
+  width:650px;
   background:rgba(255,255,255,0.35);
   border-radius:3px;
   box-shadow:0 1px 5px rgba(0,0,0,.25);
@@ -126,3 +126,9 @@ input:-moz-placeholder{
   color:#385076;
   cursor:pointer;
 }
+input:required{
+  box-shadow:none;
+}
+/*input:invalid{
+  box-shadow:0 0 3px red;
+}*/
