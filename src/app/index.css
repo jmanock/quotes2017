@@ -129,13 +129,12 @@ input:-moz-placeholder{
 input:required{
   box-shadow:none;
 }
-@media only screen and (min-width:880px){
+@media only screen and (max-width:880px){
   .background-image{
-    margin-left:0;
+    margin-left:5%;
   }
   .dogInfo, .personalInfo, .homeInfo, .overview{
-    margin-left:5%;
-
+    margin-left:10%;
   }
 }
 @media only screen and (max-width:650px){
@@ -156,6 +155,19 @@ input:required{
     font-size:.8em;
     margin-left:5%;
     width:300px;
+    font-size:.8em;
+  }
+  .name input[type=text]{
+    font-size:.8em;
+  }
+  .name, .gender{
+    margin-left:20%;
+    margin-top:15%;
+  }
+  input[type=button]:disabled{
+    font-size:.8em;
+  }
+  input[type=button]:enabled{
     font-size:.8em;
   }
 }
