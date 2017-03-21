@@ -9,7 +9,7 @@ body{
   color:#333333;
 }
 h1{
-  text-align:left;
+  text-align:center;
   background-color:#339999;
   margin-top:0;
 }
@@ -148,6 +148,9 @@ input:required{
   }
 }
 @media only screen and (max-width:500px){
+  label{
+    font-size:.9em !important;
+  }
   .background-image{
     margin-left:0;
   }
@@ -169,10 +172,5 @@ input:required{
   }
   input[type=button]:enabled{
     font-size:.8em;
-  }
-}
-@media only screen and (min-width:200px){
-  body{
-
   }
 }
