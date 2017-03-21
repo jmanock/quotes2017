@@ -147,7 +147,7 @@ input:required{
     width:500px;
   }
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:500px){
   .background-image{
     margin-left:0;
   }
